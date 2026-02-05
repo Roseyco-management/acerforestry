@@ -10,20 +10,20 @@ See: .planning/PROJECT.md (updated 2026-02-05)
 
 ## Current Position
 
-Phase: 7 of 10 (Training Videos)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-02-05 — Completed 07-02-PLAN.md
+Phase: 8 of 10 (Animations & Polish)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-05 — Completed 08-01-PLAN.md
 
-Progress: ███████████████ 136%
+Progress: ████████████████ 145%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 15
-- Average duration: 2.7 min
-- Total execution time: 0.82 hours
+- Total plans completed: 16
+- Average duration: 2.6 min
+- Total execution time: 0.83 hours
 
 **By Phase:**
 
@@ -36,10 +36,11 @@ Progress: ███████████████ 136%
 | 05    | 2     | 5.0m  | 2.5m     |
 | 06    | 2     | 4.0m  | 2.0m     |
 | 07    | 2     | 10.0m | 5.0m     |
+| 08    | 1     | 1.0m  | 1.0m     |
 
 **Recent Trend:**
 
-- Last 5 plans: 3.0m avg
+- Last 5 plans: 2.6m avg
 - Trend: Excellent execution speed
 
 ## Accumulated Context
@@ -92,6 +93,9 @@ Recent decisions affecting current work:
 | 07 | Matched services page pattern | Used same Card/Heading/aspect-video structure for visual consistency |
 | 07 | afterInteractive strategy for all analytics | GA4, Clarity, Meta Pixel load after page interactive to avoid blocking render |
 | 07 | Lazy loading pattern for videos | Documented loading="lazy" optimization for when actual video URLs are available |
+| 08 | Inline motion.div in Hero for custom stagger timing | Hero has specific directional movements (title up, subtitle down, button scale) that benefit from inline customization |
+| 08 | Desktop-only navigation animations | Mobile menu instant on click for better UX - animations only on desktop nav |
+| 08 | Subtle animations for professional aesthetic | 0.4-0.6s duration, small movements maintain professional forestry brand tone |
 
 ### Deferred Issues
 
@@ -103,7 +107,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-05T21:49:47Z
-Stopped at: Completed 07-02-PLAN.md — Integrate analytics and optimize performance
+Last session: 2026-02-05T22:47:22Z
+Stopped at: Completed 08-01-PLAN.md — Page entrance & hero animations
 Resume file: None
-Next phase: Phase 8 (Animations & Polish) - ready for planning
+Next plan: 08-02-PLAN.md (Scroll-triggered section animations)
