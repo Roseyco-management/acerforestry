@@ -18,7 +18,7 @@ None
 - [x] **Phase 6: Subcontractor Funnel** - Recruitment conversion page
 - [x] **Phase 7: Training Videos** - Educational content section
 - [x] **Phase 8: Animations & Polish** - Framer Motion integration, smooth scrolls
-- [ ] **Phase 9: SEO & Performance** - Meta tags, optimization, mobile performance
+- [x] **Phase 9: SEO & Performance** - Meta tags, optimization, mobile performance
 - [ ] **Phase 10: Deployment & Testing** - Vercel setup, final testing, launch
 
 ## Phase Details
@@ -128,7 +128,7 @@ Plans:
 
 **Goal**: Optimize for search discoverability and fast loading on rural Scotland's slower connections
 **Depends on**: Phase 8
-**Status**: In progress (1/2 plans complete)
+**Status**: Complete
 **Research**: Likely (Next.js SEO, rural connectivity optimization)
 **Research topics**: Next.js 14+ SEO best practices and meta tag patterns, image optimization for slow connections, Core Web Vitals optimization techniques
 **Plans**: 2 plans
@@ -136,7 +136,7 @@ Plans:
 Plans:
 
 - [x] 09-01: Add meta tags, OpenGraph, structured data for all pages
-- [ ] 09-02: Optimize images, implement lazy loading, and improve Core Web Vitals
+- [x] 09-02: Optimize images, implement lazy loading, and improve Core Web Vitals
 
 ### Phase 10: Deployment & Testing
 
@@ -162,5 +162,5 @@ Plans:
 | 6. Subcontractor Funnel     | 2/2            | Complete    | 2026-02-05   |
 | 7. Training Videos          | 2/2            | Complete    | 2026-02-05   |
 | 8. Animations & Polish      | 2/2            | Complete    | 2026-02-05   |
-| 9. SEO & Performance        | 0/3            | Not started | -            |
-| 10. Deployment & Testing    | 0/2            | Not started | -         |
+| 9. SEO & Performance        | 2/2            | Complete    | 2026-02-05   |
+| 10. Deployment & Testing    | 0/2            | Not started | -            |
