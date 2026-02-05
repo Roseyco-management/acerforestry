@@ -17,6 +17,12 @@ export default function SubcontractorsPage() {
         ctaText="Call About Opportunities"
         ctaHref="tel:07756513670"
       />
+
+      <ValueProp
+        title="Well-Organized Work Sites"
+        description="Sites planned and coordinated for efficient workflow. Clear communication on expectations, proper site preparation, and organized logistics. We value your time and create conditions for productive work."
+        className="bg-light"
+      />
     </>
   )
 }
