@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 import MainLayout from '@/components/layout/MainLayout'
+import { WebVitals } from './web-vitals'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -67,6 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body>
+        <WebVitals />
         <MainLayout>{children}</MainLayout>
 
         {/* Google Analytics 4 */}
