@@ -1,3 +1,6 @@
+"use client"
+
+import { motion } from 'framer-motion'
 import Container from '@/components/ui/Container'
 import Heading from '@/components/ui/Heading'
 import Button from '@/components/ui/Button'
@@ -10,7 +13,13 @@ export default function ContactCTA() {
   return (
     <section className="py-16 md:py-24 bg-charcoal">
       <Container>
-        <div className="text-center">
+        <motion.div
+          className="text-center"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <Heading as="h2" size="lg" className="mb-4 text-offwhite">
             Ready to discuss your project?
           </Heading>
@@ -25,7 +34,7 @@ export default function ContactCTA() {
               <Button variant="secondary">Send Email</Button>
             </a>
           </div>
-        </div>
+        </motion.div>
       </Container>
     </section>
   )
