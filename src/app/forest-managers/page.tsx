@@ -28,6 +28,18 @@ export default function ForestManagersPage() {
         description="26 years combined forestry experience with deep understanding of tree species selection, site conditions, and Scottish woodland establishment. We understand the science behind successful forests."
         className="bg-light"
       />
+
+      <ValueProp
+        title="Communication & Flexibility"
+        description="Regular updates throughout project lifecycle. Flexible approach adapting to site conditions and project changes. Responsive communication when you need it - phone or email, we're accessible."
+        className="bg-white"
+      />
+
+      <ValueProp
+        title="Transparent Invoicing"
+        description="Straightforward invoices matching agreed terms. No surprises, no hidden costs. Clear documentation of work completed with honest, fair pricing."
+        className="bg-light"
+      />
     </>
   )
 }
