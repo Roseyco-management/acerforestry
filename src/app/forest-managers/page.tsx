@@ -1,6 +1,13 @@
+import { Metadata } from 'next'
 import Hero from '@/components/sections/Hero'
 import ValueProp from '@/components/sections/ValueProp'
 import ContactCTA from '@/components/sections/ContactCTA'
+
+export const metadata: Metadata = {
+  title: 'For Forest Managers | Acer Forestry',
+  description:
+    'Professional woodland establishment contractor in Scotland. HSE compliant, high survival rates, 26 years experience. Serving Highlands, Perthshire, Morayshire.',
+}
 
 export default function ForestManagersPage() {
   return (
