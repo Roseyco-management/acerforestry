@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
 import Section from '@/components/ui/Section'
 import Container from '@/components/ui/Container'
-import Card from '@/components/ui/Card'
 import Heading from '@/components/ui/Heading'
+import ServicesGrid from '@/components/sections/ServicesGrid'
 
 export const metadata: Metadata = {
   title: 'Our Services | Acer Forestry',
@@ -28,99 +28,7 @@ export default function Services() {
       {/* Service Cards */}
       <Section background="light">
         <Container size="lg">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Photo placeholders ready for high-quality service images - replace bg divs with Next.js Image components when available */}
-            <Card>
-              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
-                Photo coming soon
-              </div>
-              <Heading as="h2" size="lg" className="mb-4">
-                Tree Planting
-              </Heading>
-              <p className="text-charcoal leading-relaxed">
-                Professional tree planting using silvicultural best practices. Every tree planted with precision to ensure establishment success and long-term forest health. 26 years experience across diverse Scottish terrain and species.
-              </p>
-            </Card>
-
-            <Card>
-              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
-                Photo coming soon
-              </div>
-              <Heading as="h2" size="lg" className="mb-4">
-                Manual Ground Preparation
-              </Heading>
-              <p className="text-charcoal leading-relaxed">
-                Expert manual ground preparation optimizing site conditions for planting. Careful terrain assessment and preparation techniques that respect site ecology while ensuring optimal tree establishment.
-              </p>
-            </Card>
-
-            <Card>
-              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
-                Photo coming soon
-              </div>
-              <Heading as="h2" size="lg" className="mb-4">
-                Fertilising
-              </Heading>
-              <p className="text-charcoal leading-relaxed">
-                Targeted fertilising programs supporting young tree growth and forest health. Application methods adapted to site conditions and species requirements, promoting strong early growth and long-term vitality.
-              </p>
-            </Card>
-
-            <Card>
-              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
-                Photo coming soon
-              </div>
-              <Heading as="h2" size="lg" className="mb-4">
-                Herbicide/Pesticide Application
-              </Heading>
-              <p className="text-charcoal leading-relaxed">
-                Professional herbicide and pesticide application protecting young forests from competition and pests. All applications follow stringent HSE protocols with certified operators ensuring environmental compliance and forest protection.
-              </p>
-            </Card>
-          </div>
-        </Container>
-      </Section>
-
-      {/* Additional Services */}
-      <Section background="offwhite">
-        <Container size="lg">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card>
-              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
-                Photo coming soon
-              </div>
-              <Heading as="h2" size="lg" className="mb-4">
-                Tree Removal
-              </Heading>
-              <p className="text-charcoal leading-relaxed">
-                Safe, professional tree removal when required for site management or forest health. Experienced team handling removals of all sizes with attention to site impact and safety protocols.
-              </p>
-            </Card>
-
-            <Card>
-              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
-                Photo coming soon
-              </div>
-              <Heading as="h2" size="lg" className="mb-4">
-                Invasive Species Control
-              </Heading>
-              <p className="text-charcoal leading-relaxed">
-                Strategic control of invasive plant species threatening native forest establishment. Evidence-based approaches protecting young trees and promoting healthy woodland ecosystems across Scottish landscapes.
-              </p>
-            </Card>
-
-            <Card>
-              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
-                Photo coming soon
-              </div>
-              <Heading as="h2" size="lg" className="mb-4">
-                Forest Maintenance
-              </Heading>
-              <p className="text-charcoal leading-relaxed">
-                Comprehensive forest maintenance throughout the critical 5-year establishment period. Regular monitoring, weed control, and protection measures ensuring your investment reaches independence and long-term success.
-              </p>
-            </Card>
-          </div>
+          <ServicesGrid />
         </Container>
       </Section>
     </>
