@@ -71,7 +71,7 @@ Plans:
 Plans:
 
 - [x] 04-01: Build hero section and value propositions (HSE, survival rates, silvicultural expertise)
-- [ ] 04-02: Add trust signals (communication, invoicing, ICF ethics) and prominent contact CTAs
+- [x] 04-02: Add trust signals (communication, invoicing, ICF ethics) and prominent contact CTAs
 - [ ] 04-03: Add testimonials section and final conversion elements
 
 ### Phase 5: Services Deep Dive
