@@ -6,24 +6,24 @@ See: .planning/PROJECT.md (updated 2026-02-05)
 
 **Core value:** Convert warm leads across all three audiences - Forest Managers into clients, service browsers into inquiries, and quality tree planters into subcontractors - while establishing Acer Forestry as the credible, professional, ethical choice in the Scottish forestry ecosystem.
 
-**Current focus:** Phase 2 — Design System
+**Current focus:** Phase 3 — Core Layout & Navigation
 
 ## Current Position
 
-Phase: 2 of 10 (Design System)
-Plan: 3 of 3 in current phase
-Status: Complete
-Last activity: 2026-02-05 — Completed 02-03-PLAN.md
+Phase: 3 of 10 (Core Layout & Navigation)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-05 — Completed 03-01-PLAN.md
 
-Progress: █████░░░░░ 25%
+Progress: ██████░░░░ 30%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 5
-- Average duration: 3.4 min
-- Total execution time: 0.28 hours
+- Total plans completed: 6
+- Average duration: 2.9 min
+- Total execution time: 0.29 hours
 
 **By Phase:**
 
@@ -31,11 +31,12 @@ Progress: █████░░░░░ 25%
 | ----- | ----- | ----- | -------- |
 | 01    | 2     | 8.4m  | 4.2m     |
 | 02    | 3     | 9.0m  | 3.0m     |
+| 03    | 1     | 1.0m  | 1.0m     |
 
 **Recent Trend:**
 
-- Last 5 plans: 3.4m avg
-- Trend: Consistent execution speed
+- Last 5 plans: 2.6m avg
+- Trend: Improving execution speed
 
 ## Accumulated Context
 
@@ -61,6 +62,9 @@ Recent decisions affecting current work:
 | 02 | clsx for className merging | Enables Tailwind override pattern while maintaining base styling |
 | 02 | Variant-based styling over duplication | Reduces code duplication, cleaner component API |
 | 02 | Semantic vs visual heading decoupling | Critical for SEO - allows h2 to visually match h1 when needed |
+| 03 | Single component for desktop and mobile navigation | Centralizes navigation logic using useState for mobile menu toggle |
+| 03 | Hamburger icon using CSS borders | Reduces dependencies, provides full styling control |
+| 03 | Phone CTA as Button with anchor inside | Maintains Button styling while allowing tel: href functionality |
 
 ### Deferred Issues
 
@@ -72,7 +76,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-05T20:26:22Z
-Stopped at: Completed 02-03-PLAN.md — Phase 2 complete
+Last session: 2026-02-05T20:33:32Z
+Stopped at: Completed 03-01-PLAN.md
 Resume file: None
-Next phase: Phase 3 - Core Layout & Navigation

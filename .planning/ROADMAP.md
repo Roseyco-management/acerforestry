@@ -58,7 +58,7 @@ Plans:
 
 Plans:
 
-- [ ] 03-01: Build responsive header with navigation and mobile menu
+- [x] 03-01: Build responsive header with navigation and mobile menu
 - [ ] 03-02: Create footer with contact information and create routing structure for all pages
 
 ### Phase 4: Forest Manager Funnel
@@ -155,7 +155,7 @@ Plans:
 | --------------------------- | -------------- | ----------- | ------------ |
 | 1. Foundation & Setup       | 2/2            | Complete    | 2026-02-05   |
 | 2. Design System            | 3/3            | Complete    | 2026-02-05   |
-| 3. Core Layout & Navigation | 0/2            | Not started | -         |
+| 3. Core Layout & Navigation | 1/2            | In progress | -            |
 | 4. Forest Manager Funnel    | 0/2            | Not started | -         |
 | 5. Services Deep Dive       | 0/2            | Not started | -         |
 | 6. Subcontractor Funnel     | 0/2            | Not started | -         |
