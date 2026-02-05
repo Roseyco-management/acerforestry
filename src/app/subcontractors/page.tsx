@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Hero from '@/components/sections/Hero'
 import ValueProp from '@/components/sections/ValueProp'
+import ContactCTA from '@/components/sections/ContactCTA'
 
 export const metadata: Metadata = {
   title: 'Work With Us | Acer Forestry',
@@ -47,6 +48,8 @@ export default function SubcontractorsPage() {
         description="We select and prepare sites with care. Quality ground preparation means better planting conditions and more productive days. Silvicultural approach creates better working conditions for planters."
         className="bg-light"
       />
+
+      <ContactCTA />
     </>
   )
 }
