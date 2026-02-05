@@ -22,6 +22,13 @@ const config: Config = {
         heather: '#7209B7',
         stone: '#6C757D',
       },
+      fontFamily: {
+        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+      },
+      lineHeight: {
+        tight: '1.25',
+        relaxed: '1.625',
+      },
     },
   },
   plugins: [],
