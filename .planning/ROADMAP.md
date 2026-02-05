@@ -95,7 +95,7 @@ Plans:
 
 Plans:
 
-- [ ] 06-01: Build hero and key benefits section (organized sites, weekly pay, competitive rates)
+- [x] 06-01: Build hero and key benefits section (organized sites, weekly pay, competitive rates)
 - [ ] 06-02: Add accommodation info, ground conditions, and application process with contact CTAs
 
 ### Phase 7: Training Videos
@@ -158,8 +158,8 @@ Plans:
 | 2. Design System            | 3/3            | Complete    | 2026-02-05   |
 | 3. Core Layout & Navigation | 2/2            | Complete    | 2026-02-05   |
 | 4. Forest Manager Funnel    | 2/3            | In progress | -            |
-| 5. Services Deep Dive       | 1/2            | In progress | -         |
-| 6. Subcontractor Funnel     | 0/2            | Not started | -         |
+| 5. Services Deep Dive       | 2/2            | Complete    | 2026-02-05   |
+| 6. Subcontractor Funnel     | 1/2            | In progress | -            |
 | 7. Training Videos          | 0/2            | Not started | -         |
 | 8. Animations & Polish      | 0/2            | Not started | -         |
 | 9. SEO & Performance        | 0/3            | Not started | -         |

@@ -10,20 +10,20 @@ See: .planning/PROJECT.md (updated 2026-02-05)
 
 ## Current Position
 
-Phase: 5 of 10 (Services Deep Dive)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-02-05 — Completed 05-02-PLAN.md
+Phase: 6 of 10 (Subcontractor Funnel)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-05 — Completed 06-01-PLAN.md
 
-Progress: ███████████ 100%
+Progress: ████████████░ 109%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 11
+- Total plans completed: 12
 - Average duration: 2.5 min
-- Total execution time: 0.59 hours
+- Total execution time: 0.62 hours
 
 **By Phase:**
 
@@ -34,10 +34,11 @@ Progress: ███████████ 100%
 | 03    | 2     | 2.0m  | 1.0m     |
 | 04    | 2     | 13.0m | 6.5m     |
 | 05    | 2     | 5.0m  | 2.5m     |
+| 06    | 1     | 2.0m  | 2.0m     |
 
 **Recent Trend:**
 
-- Last 5 plans: 3.2m avg
+- Last 5 plans: 3.0m avg
 - Trend: Excellent execution speed
 
 ## Accumulated Context
@@ -82,6 +83,9 @@ Recent decisions affecting current work:
 | 05 | 3-column grid for second section | Only 3 cards in section, so lg:grid-cols-3 instead of 2-column layout |
 | 05 | bg-offwhite for second section | Section component limitation - only supports offwhite/light/primary |
 | 05 | 16:9 aspect ratio photo placeholders | Standard video aspect ratio, neutral-200 gray with centered text |
+| 06 | Hero subtitle emphasis on quality opportunities | Highlighted professionalism, weekly pay, productive conditions to appeal to skilled subcontractors |
+| 06 | Value prop ordering for subcontractors | Well-Organized Sites first (workflow), Weekly Payment second (cash flow), Competitive Rates third (compensation) |
+| 06 | CTA text "Call About Opportunities" | More specific than generic "Call Us", clarifies action and outcome |
 
 ### Deferred Issues
 
@@ -93,7 +97,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-05T21:08:03Z
-Stopped at: Completed 05-02-PLAN.md — Complete services showcase
+Last session: 2026-02-05T21:14:50Z
+Stopped at: Completed 06-01-PLAN.md — Subcontractor hero & value props
 Resume file: None
-Next phase: Phase 6 (Subcontractor Funnel) - ready for planning
+Next plan: 06-02-PLAN.md (accommodation, ground conditions, application process)
