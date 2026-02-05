@@ -108,7 +108,7 @@ Plans:
 
 Plans:
 
-- [ ] 07-01: Create video page layout with responsive video player
+- [x] 07-01: Create video page layout with responsive video player
 - [ ] 07-02: Migrate training video content from existing site and optimize loading
 
 ### Phase 8: Animations & Polish
@@ -160,7 +160,7 @@ Plans:
 | 4. Forest Manager Funnel    | 2/3            | In progress | -            |
 | 5. Services Deep Dive       | 2/2            | Complete    | 2026-02-05   |
 | 6. Subcontractor Funnel     | 2/2            | Complete    | 2026-02-05   |
-| 7. Training Videos          | 0/2            | Not started | -         |
+| 7. Training Videos          | 1/2            | In progress | -            |
 | 8. Animations & Polish      | 0/2            | Not started | -         |
 | 9. SEO & Performance        | 0/3            | Not started | -         |
 | 10. Deployment & Testing    | 0/2            | Not started | -         |
