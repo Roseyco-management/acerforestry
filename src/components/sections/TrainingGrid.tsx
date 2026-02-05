@@ -14,6 +14,8 @@ export default function TrainingGrid() {
         transition={{ duration: 0.6, delay: 0, ease: "easeOut" }}
       >
         <Card>
+          {/* TODO: Replace with video embed or <Image src="/photos/tree-planting-video-poster.jpg" alt="Tree planting techniques demonstration" width={800} height={450} />
+               Use OptimizedImage component from @/components/ui/Image for automatic optimization */}
           <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
             Video coming soon
           </div>
@@ -35,6 +37,8 @@ export default function TrainingGrid() {
         transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
       >
         <Card>
+          {/* TODO: Replace with video embed or <Image src="/photos/ground-preparation-video-poster.jpg" alt="Ground preparation methods demonstration" width={800} height={450} />
+               Use OptimizedImage component from @/components/ui/Image for automatic optimization */}
           <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
             Video coming soon
           </div>
@@ -56,6 +60,8 @@ export default function TrainingGrid() {
         transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
       >
         <Card>
+          {/* TODO: Replace with video embed or <Image src="/photos/safety-protocols-video-poster.jpg" alt="Forestry safety protocols demonstration" width={800} height={450} />
+               Use OptimizedImage component from @/components/ui/Image for automatic optimization */}
           <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
             Video coming soon
           </div>
@@ -77,6 +83,8 @@ export default function TrainingGrid() {
         transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
       >
         <Card>
+          {/* TODO: Replace with video embed or <Image src="/photos/quality-standards-video-poster.jpg" alt="Forestry quality standards demonstration" width={800} height={450} />
+               Use OptimizedImage component from @/components/ui/Image for automatic optimization */}
           <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
             Video coming soon
           </div>
