@@ -12,9 +12,51 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Acer Forestry',
+  metadataBase: new URL('https://acerforestry.co.uk'),
+  title: {
+    default: 'Acer Forestry - Woodland Establishment Specialists | Scotland',
+    template: '%s | Acer Forestry',
+  },
   description:
-    'Professional forestry services for sustainable woodland management',
+    'Professional woodland establishment contractors serving Highlands, Perthshire, and Morayshire. HSE compliant tree planting with 26 years experience.',
+  keywords: [
+    'woodland establishment',
+    'tree planting Scotland',
+    'forestry contractors',
+    'HSE compliant',
+    'Highlands',
+    'Perthshire',
+    'Morayshire',
+    'silviculture',
+  ],
+  authors: [{ name: 'Acer Forestry Ltd' }],
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    siteName: 'Acer Forestry',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Acer Forestry - Professional Woodland Establishment',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: { url: '/apple-touch-icon.png', sizes: '180x180' },
+  },
 }
 
 export default function RootLayout({
