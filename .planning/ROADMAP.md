@@ -46,7 +46,7 @@ Plans:
 Plans:
 
 - [x] 02-01: Refine logo to darker green, define color palette (natural greens, professional neutrals)
-- [ ] 02-02: Establish typography system and spacing scales
+- [x] 02-02: Establish typography system and spacing scales
 - [ ] 02-03: Create reusable component library (buttons, cards, sections, hero components)
 
 ### Phase 3: Core Layout & Navigation
@@ -154,7 +154,7 @@ Plans:
 | Phase                       | Plans Complete | Status      | Completed    |
 | --------------------------- | -------------- | ----------- | ------------ |
 | 1. Foundation & Setup       | 2/2            | Complete    | 2026-02-05   |
-| 2. Design System            | 1/3            | In progress | -         |
+| 2. Design System            | 2/3            | In progress | -         |
 | 3. Core Layout & Navigation | 0/2            | Not started | -         |
 | 4. Forest Manager Funnel    | 0/2            | Not started | -         |
 | 5. Services Deep Dive       | 0/2            | Not started | -         |
