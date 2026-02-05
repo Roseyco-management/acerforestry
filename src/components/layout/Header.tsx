@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import Container from '@/components/ui/Container'
 import Button from '@/components/ui/Button'
 import { cn } from '@/lib/utils'
@@ -46,20 +47,32 @@ export default function Header({ className }: HeaderProps) {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
+            {navLinks.map((link, index) => (
+              <motion.div
                 key={link.href}
-                href={link.href}
-                className="text-darkgray hover:text-primary transition-colors duration-200 font-medium"
+                initial={{ opacity: 0, y: -5 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1, ease: 'easeOut' }}
               >
-                {link.label}
-              </Link>
+                <Link
+                  href={link.href}
+                  className="text-darkgray hover:text-primary transition-colors duration-200 font-medium"
+                >
+                  {link.label}
+                </Link>
+              </motion.div>
             ))}
-            <Button variant="primary" size="md">
-              <a href="tel:07756513670" className="text-offwhite no-underline">
-                07756 513670
-              </a>
-            </Button>
+            <motion.div
+              initial={{ opacity: 0, y: -5 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.5, ease: 'easeOut' }}
+            >
+              <Button variant="primary" size="md">
+                <a href="tel:07756513670" className="text-offwhite no-underline">
+                  07756 513670
+                </a>
+              </Button>
+            </motion.div>
           </nav>
 
           {/* Mobile Menu Button */}
