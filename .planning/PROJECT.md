@@ -48,6 +48,7 @@ Convert warm leads across all three audiences - Forest Managers into clients, se
 ### Scottish Forestry Ecosystem
 
 Forest Managers work for large estates and coordinate multiple specialist contractors:
+
 - Timber Harvesting
 - Timber Transport
 - Saw Mills
@@ -60,6 +61,7 @@ Forest Managers work for large estates and coordinate multiple specialist contra
 ### Audience Pain Points
 
 **Forest Managers Value:**
+
 1. HSE compliance (health, safety, environment)
 2. High tree survival rates
 3. Silvicultural understanding (forestry science)
@@ -69,6 +71,7 @@ Forest Managers work for large estates and coordinate multiple specialist contra
 7. Ethical values aligned with ICF (Institute of Chartered Foresters)
 
 **Subcontractors Value:**
+
 1. Well-organized work sites
 2. Fast payment (weekly in our case)
 3. Competitive rates
@@ -99,14 +102,15 @@ Forest Managers work for large estates and coordinate multiple specialist contra
 
 ## Key Decisions
 
-| Decision | Rationale | Outcome |
-|----------|-----------|---------|
-| Next.js over plain React | SEO critical for discoverability, Vercel deployment simplicity, excellent Framer Motion support | — Pending |
-| Three-funnel architecture | Distinct audiences need tailored messaging (Forest Managers ≠ Subcontractors ≠ Service browsers) | — Pending |
+| Decision                               | Rationale                                                                                              | Outcome   |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------ | --------- |
+| Next.js over plain React               | SEO critical for discoverability, Vercel deployment simplicity, excellent Framer Motion support        | — Pending |
+| Three-funnel architecture              | Distinct audiences need tailored messaging (Forest Managers ≠ Subcontractors ≠ Service browsers)       | — Pending |
 | Design blending professional + natural | Must convey credibility (HSE compliance, ICF ethics) while reflecting connection to Scottish landscape | — Pending |
-| Include training videos in v1 | Demonstrates expertise and methods, valuable for both client confidence and subcontractor recruitment | — Pending |
-| No reviews/testimonials initially | Not currently available, but design allows future addition when obtained | — Pending |
-| Darker green logo refinement | Better connection to forestry/nature theme, more professional than current bright green | — Pending |
+| Include training videos in v1          | Demonstrates expertise and methods, valuable for both client confidence and subcontractor recruitment  | — Pending |
+| No reviews/testimonials initially      | Not currently available, but design allows future addition when obtained                               | — Pending |
+| Darker green logo refinement           | Better connection to forestry/nature theme, more professional than current bright green                | — Pending |
 
 ---
-*Last updated: February 5, 2026 after project initialization*
+
+_Last updated: February 5, 2026 after project initialization_

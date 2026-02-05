@@ -3,7 +3,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Acer Forestry',
-  description: 'Professional forestry services for sustainable woodland management',
+  description:
+    'Professional forestry services for sustainable woodland management',
 }
 
 export default function RootLayout({
