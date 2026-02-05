@@ -10,20 +10,20 @@ See: .planning/PROJECT.md (updated 2026-02-05)
 
 ## Current Position
 
-Phase: 8 of 10 (Animations & Polish)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-02-05 — Completed 08-02-PLAN.md
+Phase: 9 of 10 (SEO & Performance)
+Plan: 1 of 2 in current phase
+Status: In progress
+Last activity: 2026-02-05 — Completed 09-01-PLAN.md
 
-Progress: ████████████████ 154%
+Progress: █████████████████ 163%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 17
+- Total plans completed: 18
 - Average duration: 2.9 min
-- Total execution time: 0.92 hours
+- Total execution time: 0.97 hours
 
 **By Phase:**
 
@@ -37,6 +37,7 @@ Progress: ████████████████ 154%
 | 06    | 2     | 4.0m  | 2.0m     |
 | 07    | 2     | 10.0m | 5.0m     |
 | 08    | 2     | 6.0m  | 3.0m     |
+| 09    | 1     | 3.0m  | 3.0m     |
 
 **Recent Trend:**
 
@@ -100,6 +101,10 @@ Recent decisions affecting current work:
 | 08 | Viewport thresholds optimized per component | 0.3 for ValueProp (large sections), 0.2 for cards, 0.5 for CTA (emphasis) |
 | 08 | Scale animation for ContactCTA | Emphasis effect different from fade/slide pattern creates conversion focus |
 | 08 | Client component extraction for pages with metadata | Preserves App Router metadata exports while enabling animations |
+| 09 | Title template '%s \| Acer Forestry' | Consistent branding across pages, default for home page, template for children |
+| 09 | metadataBase https://acerforestry.co.uk | Absolute URLs for OpenGraph - can be updated when final domain confirmed |
+| 09 | LocalBusiness schema over Organization | Location-specific Scottish contractor with defined service areas |
+| 09 | Favicon generation from logo.svg | ImageMagick conversion to PNG at 16x16, 32x32, 180x180 with transparent backgrounds |
 
 ### Deferred Issues
 
@@ -111,7 +116,7 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-05T23:00:31Z
-Stopped at: Completed 08-02-PLAN.md — Scroll-triggered section animations
+Last session: 2026-02-05T23:10:48Z
+Stopped at: Completed 09-01-PLAN.md — SEO metadata and structured data
 Resume file: None
-Next phase: 09 (SEO & Performance)
+Next plan: 09-02 (Image optimization and Core Web Vitals)
