@@ -67,6 +67,40 @@ export default function Services() {
           </div>
         </Container>
       </Section>
+
+      {/* Additional Services */}
+      <Section background="offwhite">
+        <Container size="lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card>
+              <Heading as="h2" size="lg" className="mb-4">
+                Tree Removal
+              </Heading>
+              <p className="text-charcoal leading-relaxed">
+                Safe, professional tree removal when required for site management or forest health. Experienced team handling removals of all sizes with attention to site impact and safety protocols.
+              </p>
+            </Card>
+
+            <Card>
+              <Heading as="h2" size="lg" className="mb-4">
+                Invasive Species Control
+              </Heading>
+              <p className="text-charcoal leading-relaxed">
+                Strategic control of invasive plant species threatening native forest establishment. Evidence-based approaches protecting young trees and promoting healthy woodland ecosystems across Scottish landscapes.
+              </p>
+            </Card>
+
+            <Card>
+              <Heading as="h2" size="lg" className="mb-4">
+                Forest Maintenance
+              </Heading>
+              <p className="text-charcoal leading-relaxed">
+                Comprehensive forest maintenance throughout the critical 5-year establishment period. Regular monitoring, weed control, and protection measures ensuring your investment reaches independence and long-term success.
+              </p>
+            </Card>
+          </div>
+        </Container>
+      </Section>
     </>
   )
 }
