@@ -28,7 +28,31 @@ export default function Training() {
         </div>
       </Section>
 
-      {/* Video Grid - Placeholders ready for actual video URLs */}
+      {/* Video Grid - Placeholders ready for actual video URLs
+
+          Performance optimization for video embeds:
+          When adding YouTube/Vimeo iframes, use:
+          - loading="lazy" attribute for native lazy loading
+          - strategy="afterInteractive" if using Next.js Script
+          - Wrap in aspect-video div to maintain 16:9 ratio
+
+          Example YouTube embed pattern:
+          <div className="aspect-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              title="Video title"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="rounded"
+            />
+          </div>
+
+          This ensures videos don't load until scrolled into viewport,
+          maintaining fast page load for rural connections.
+      */}
       <Section background="light">
         <Container size="lg">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
