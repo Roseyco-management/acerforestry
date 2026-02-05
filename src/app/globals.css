@@ -5,6 +5,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Acer Forestry Brand Colors */
+  --color-primary: #1B4332;
+  --color-secondary: #2D6A4F;
+  --color-accent: #52B788;
+  --color-charcoal: #2B2D42;
+  --color-slate: #8D99AE;
+  --color-light: #EDF2F4;
+  --color-offwhite: #FEFEFE;
+  --color-heather: #7209B7;
+  --color-stone: #6C757D;
 }
 
 @media (prefers-color-scheme: dark) {
