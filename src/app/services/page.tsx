@@ -29,7 +29,11 @@ export default function Services() {
       <Section background="light">
         <Container size="lg">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Photo placeholders ready for high-quality service images - replace bg divs with Next.js Image components when available */}
             <Card>
+              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
+                Photo coming soon
+              </div>
               <Heading as="h2" size="lg" className="mb-4">
                 Tree Planting
               </Heading>
@@ -39,6 +43,9 @@ export default function Services() {
             </Card>
 
             <Card>
+              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
+                Photo coming soon
+              </div>
               <Heading as="h2" size="lg" className="mb-4">
                 Manual Ground Preparation
               </Heading>
@@ -48,6 +55,9 @@ export default function Services() {
             </Card>
 
             <Card>
+              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
+                Photo coming soon
+              </div>
               <Heading as="h2" size="lg" className="mb-4">
                 Fertilising
               </Heading>
@@ -57,6 +67,9 @@ export default function Services() {
             </Card>
 
             <Card>
+              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
+                Photo coming soon
+              </div>
               <Heading as="h2" size="lg" className="mb-4">
                 Herbicide/Pesticide Application
               </Heading>
@@ -73,6 +86,9 @@ export default function Services() {
         <Container size="lg">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card>
+              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
+                Photo coming soon
+              </div>
               <Heading as="h2" size="lg" className="mb-4">
                 Tree Removal
               </Heading>
@@ -82,6 +98,9 @@ export default function Services() {
             </Card>
 
             <Card>
+              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
+                Photo coming soon
+              </div>
               <Heading as="h2" size="lg" className="mb-4">
                 Invasive Species Control
               </Heading>
@@ -91,6 +110,9 @@ export default function Services() {
             </Card>
 
             <Card>
+              <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
+                Photo coming soon
+              </div>
               <Heading as="h2" size="lg" className="mb-4">
                 Forest Maintenance
               </Heading>
