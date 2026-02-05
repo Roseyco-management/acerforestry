@@ -13,8 +13,8 @@ None
 - [x] **Phase 1: Foundation & Setup** - Next.js + TypeScript + Tailwind infrastructure
 - [x] **Phase 2: Design System** - Colors, typography, components, refined logo
 - [x] **Phase 3: Core Layout & Navigation** - Header, footer, routing structure
-- [ ] **Phase 4: Forest Manager Funnel** - Primary client conversion page
-- [ ] **Phase 5: Services Deep Dive** - Detailed service showcase page
+- [x] **Phase 4: Forest Manager Funnel** - Primary client conversion page
+- [x] **Phase 5: Services Deep Dive** - Detailed service showcase page
 - [ ] **Phase 6: Subcontractor Funnel** - Recruitment conversion page
 - [ ] **Phase 7: Training Videos** - Educational content section
 - [ ] **Phase 8: Animations & Polish** - Framer Motion integration, smooth scrolls
@@ -84,7 +84,7 @@ Plans:
 Plans:
 
 - [x] 05-01: Create service cards for tree planting, ground prep, fertilising, herbicide/pesticide application
-- [ ] 05-02: Add tree removal, invasive species control, forest maintenance with photo placeholders
+- [x] 05-02: Add tree removal, invasive species control, forest maintenance with photo placeholders
 
 ### Phase 6: Subcontractor Funnel
 
