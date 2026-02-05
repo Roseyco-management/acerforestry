@@ -66,12 +66,13 @@ Plans:
 **Goal**: Deliver primary client conversion page addressing HSE compliance, tree survival, expertise, communication, invoicing, and ICF ethics
 **Depends on**: Phase 3
 **Research**: Unlikely (internal content, conversion patterns known)
-**Plans**: 2 plans
+**Plans**: 3 plans
 
 Plans:
 
-- [ ] 04-01: Build hero section and value propositions (HSE, survival rates, silvicultural expertise)
+- [x] 04-01: Build hero section and value propositions (HSE, survival rates, silvicultural expertise)
 - [ ] 04-02: Add trust signals (communication, invoicing, ICF ethics) and prominent contact CTAs
+- [ ] 04-03: Add testimonials section and final conversion elements
 
 ### Phase 5: Services Deep Dive
 
@@ -156,7 +157,7 @@ Plans:
 | 1. Foundation & Setup       | 2/2            | Complete    | 2026-02-05   |
 | 2. Design System            | 3/3            | Complete    | 2026-02-05   |
 | 3. Core Layout & Navigation | 2/2            | Complete    | 2026-02-05   |
-| 4. Forest Manager Funnel    | 0/2            | Not started | -         |
+| 4. Forest Manager Funnel    | 1/3            | In progress | -            |
 | 5. Services Deep Dive       | 0/2            | Not started | -         |
 | 6. Subcontractor Funnel     | 0/2            | Not started | -         |
 | 7. Training Videos          | 0/2            | Not started | -         |
