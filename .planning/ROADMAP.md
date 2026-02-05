@@ -15,7 +15,7 @@ None
 - [x] **Phase 3: Core Layout & Navigation** - Header, footer, routing structure
 - [x] **Phase 4: Forest Manager Funnel** - Primary client conversion page
 - [x] **Phase 5: Services Deep Dive** - Detailed service showcase page
-- [ ] **Phase 6: Subcontractor Funnel** - Recruitment conversion page
+- [x] **Phase 6: Subcontractor Funnel** - Recruitment conversion page
 - [ ] **Phase 7: Training Videos** - Educational content section
 - [ ] **Phase 8: Animations & Polish** - Framer Motion integration, smooth scrolls
 - [ ] **Phase 9: SEO & Performance** - Meta tags, optimization, mobile performance
@@ -96,7 +96,7 @@ Plans:
 Plans:
 
 - [x] 06-01: Build hero and key benefits section (organized sites, weekly pay, competitive rates)
-- [ ] 06-02: Add accommodation info, ground conditions, and application process with contact CTAs
+- [x] 06-02: Add accommodation info, ground conditions, and application process with contact CTAs
 
 ### Phase 7: Training Videos
 
@@ -159,7 +159,7 @@ Plans:
 | 3. Core Layout & Navigation | 2/2            | Complete    | 2026-02-05   |
 | 4. Forest Manager Funnel    | 2/3            | In progress | -            |
 | 5. Services Deep Dive       | 2/2            | Complete    | 2026-02-05   |
-| 6. Subcontractor Funnel     | 1/2            | In progress | -            |
+| 6. Subcontractor Funnel     | 2/2            | Complete    | 2026-02-05   |
 | 7. Training Videos          | 0/2            | Not started | -         |
 | 8. Animations & Polish      | 0/2            | Not started | -         |
 | 9. SEO & Performance        | 0/3            | Not started | -         |
