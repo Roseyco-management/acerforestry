@@ -83,7 +83,7 @@ Plans:
 
 Plans:
 
-- [ ] 05-01: Create service cards for tree planting, ground prep, fertilising, herbicide/pesticide application
+- [x] 05-01: Create service cards for tree planting, ground prep, fertilising, herbicide/pesticide application
 - [ ] 05-02: Add tree removal, invasive species control, forest maintenance with photo placeholders
 
 ### Phase 6: Subcontractor Funnel
@@ -157,8 +157,8 @@ Plans:
 | 1. Foundation & Setup       | 2/2            | Complete    | 2026-02-05   |
 | 2. Design System            | 3/3            | Complete    | 2026-02-05   |
 | 3. Core Layout & Navigation | 2/2            | Complete    | 2026-02-05   |
-| 4. Forest Manager Funnel    | 1/3            | In progress | -            |
-| 5. Services Deep Dive       | 0/2            | Not started | -         |
+| 4. Forest Manager Funnel    | 2/3            | In progress | -            |
+| 5. Services Deep Dive       | 1/2            | In progress | -         |
 | 6. Subcontractor Funnel     | 0/2            | Not started | -         |
 | 7. Training Videos          | 0/2            | Not started | -         |
 | 8. Animations & Polish      | 0/2            | Not started | -         |
