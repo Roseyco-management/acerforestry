@@ -24,6 +24,49 @@ export default function Services() {
           </p>
         </div>
       </Section>
+
+      {/* Service Cards */}
+      <Section background="light">
+        <Container size="lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card>
+              <Heading as="h2" size="lg" className="mb-4">
+                Tree Planting
+              </Heading>
+              <p className="text-charcoal leading-relaxed">
+                Professional tree planting using silvicultural best practices. Every tree planted with precision to ensure establishment success and long-term forest health. 26 years experience across diverse Scottish terrain and species.
+              </p>
+            </Card>
+
+            <Card>
+              <Heading as="h2" size="lg" className="mb-4">
+                Manual Ground Preparation
+              </Heading>
+              <p className="text-charcoal leading-relaxed">
+                Expert manual ground preparation optimizing site conditions for planting. Careful terrain assessment and preparation techniques that respect site ecology while ensuring optimal tree establishment.
+              </p>
+            </Card>
+
+            <Card>
+              <Heading as="h2" size="lg" className="mb-4">
+                Fertilising
+              </Heading>
+              <p className="text-charcoal leading-relaxed">
+                Targeted fertilising programs supporting young tree growth and forest health. Application methods adapted to site conditions and species requirements, promoting strong early growth and long-term vitality.
+              </p>
+            </Card>
+
+            <Card>
+              <Heading as="h2" size="lg" className="mb-4">
+                Herbicide/Pesticide Application
+              </Heading>
+              <p className="text-charcoal leading-relaxed">
+                Professional herbicide and pesticide application protecting young forests from competition and pests. All applications follow stringent HSE protocols with certified operators ensuring environmental compliance and forest protection.
+              </p>
+            </Card>
+          </div>
+        </Container>
+      </Section>
     </>
   )
 }
