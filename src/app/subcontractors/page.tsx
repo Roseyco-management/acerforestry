@@ -1,12 +1,22 @@
-export default function Subcontractors() {
+import { Metadata } from 'next'
+import Hero from '@/components/sections/Hero'
+import ValueProp from '@/components/sections/ValueProp'
+
+export const metadata: Metadata = {
+  title: 'Work With Us | Acer Forestry',
+  description:
+    'Quality tree planting opportunities in Scottish forestry. Weekly pay, well-organized sites, competitive rates. Join our team of professional subcontractors.',
+}
+
+export default function SubcontractorsPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <main className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Subcontractors</h1>
-        <p className="text-lg text-gray-600">
-          Subcontractors page coming in Phase 6
-        </p>
-      </main>
-    </div>
+    <>
+      <Hero
+        title="Work With Us"
+        subtitle="Quality tree planting opportunities in Scottish forestry. We're looking for skilled, reliable subcontractors who take pride in their work. Join a team that values professionalism, pays weekly, and creates the conditions for productive work."
+        ctaText="Call About Opportunities"
+        ctaHref="tel:07756513670"
+      />
+    </>
   )
 }
