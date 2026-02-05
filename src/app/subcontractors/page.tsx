@@ -23,6 +23,18 @@ export default function SubcontractorsPage() {
         description="Sites planned and coordinated for efficient workflow. Clear communication on expectations, proper site preparation, and organized logistics. We value your time and create conditions for productive work."
         className="bg-light"
       />
+
+      <ValueProp
+        title="Weekly Payment"
+        description="Paid weekly, not monthly. We understand the importance of regular cash flow for self-employed professionals. Straightforward payment schedule you can rely on."
+        className="bg-white"
+      />
+
+      <ValueProp
+        title="Competitive Rates"
+        description="Fair, competitive rates for quality tree planting work. Transparent pricing structure discussed upfront. We value skilled planters and compensate accordingly."
+        className="bg-light"
+      />
     </>
   )
 }
