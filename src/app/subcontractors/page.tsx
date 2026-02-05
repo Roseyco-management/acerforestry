@@ -35,6 +35,18 @@ export default function SubcontractorsPage() {
         description="Fair, competitive rates for quality tree planting work. Transparent pricing structure discussed upfront. We value skilled planters and compensate accordingly."
         className="bg-light"
       />
+
+      <ValueProp
+        title="Accommodation Available"
+        description="Caravan accommodation available for those who need it. We understand traveling for work requires proper accommodation arrangements. Options discussed based on project location and duration."
+        className="bg-white"
+      />
+
+      <ValueProp
+        title="Good Ground Conditions"
+        description="We select and prepare sites with care. Quality ground preparation means better planting conditions and more productive days. Silvicultural approach creates better working conditions for planters."
+        className="bg-light"
+      />
     </>
   )
 }
