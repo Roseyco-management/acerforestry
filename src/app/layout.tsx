@@ -118,6 +118,36 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
+
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'LocalBusiness',
+              name: 'Acer Forestry Ltd',
+              description:
+                'Professional woodland establishment and forestry services',
+              url: 'https://acerforestry.co.uk',
+              telephone: '+44-7756-513670',
+              email: 'dillan.hill@acerforestry.co.uk',
+              address: {
+                '@type': 'PostalAddress',
+                addressCountry: 'GB',
+                addressRegion: 'Scotland',
+              },
+              areaServed: ['Highlands', 'Perthshire', 'Morayshire'],
+              serviceType: [
+                'Woodland Establishment',
+                'Tree Planting',
+                'Ground Preparation',
+                'Fertilising',
+                'Forest Maintenance',
+              ],
+            }),
+          }}
+        />
       </body>
     </html>
   )

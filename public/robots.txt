@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://acerforestry.co.uk/sitemap.xml
