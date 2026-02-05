@@ -1,5 +1,6 @@
 import Hero from '@/components/sections/Hero'
 import ValueProp from '@/components/sections/ValueProp'
+import ContactCTA from '@/components/sections/ContactCTA'
 
 export default function ForestManagersPage() {
   return (
@@ -40,6 +41,14 @@ export default function ForestManagersPage() {
         description="Straightforward invoices matching agreed terms. No surprises, no hidden costs. Clear documentation of work completed with honest, fair pricing."
         className="bg-light"
       />
+
+      <ValueProp
+        title="ICF Ethical Standards"
+        description="Committed to ICF ethical standards in all forestry operations. Professional, ethical approach to woodland establishment that respects environmental stewardship and sustainable forestry practices."
+        className="bg-white"
+      />
+
+      <ContactCTA />
     </>
   )
 }
