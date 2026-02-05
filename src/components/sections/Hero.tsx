@@ -1,5 +1,8 @@
+'use client'
+
 import { ReactNode } from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 import { cn } from '@/lib/utils'
 import Container from '@/components/ui/Container'
 import Heading from '@/components/ui/Heading'
@@ -35,17 +38,34 @@ export default function Hero({
     >
       <Container>
         <div className="text-center max-w-4xl mx-auto">
-          <Heading as="h1" size="xl" className="mb-6 text-offwhite">
-            {title}
-          </Heading>
-          <p className="text-lg md:text-xl mb-8 text-light leading-relaxed">
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+          >
+            <Heading as="h1" size="xl" className="mb-6 text-offwhite">
+              {title}
+            </Heading>
+          </motion.div>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
+            className="text-lg md:text-xl mb-8 text-light leading-relaxed"
+          >
             {subtitle}
-          </p>
-          <Link href={ctaHref}>
-            <Button variant="secondary" size="lg">
-              {ctaText}
-            </Button>
-          </Link>
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: 'easeOut' }}
+          >
+            <Link href={ctaHref}>
+              <Button variant="secondary" size="lg">
+                {ctaText}
+              </Button>
+            </Link>
+          </motion.div>
           {children && <div className="mt-8">{children}</div>}
         </div>
       </Container>
