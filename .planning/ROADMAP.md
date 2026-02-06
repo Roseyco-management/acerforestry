@@ -148,7 +148,7 @@ Plans:
 
 Plans:
 
-- [ ] 10-01: Configure Vercel deployment, environment variables, and custom domain
+- [x] 10-01: Configure Vercel deployment, environment variables, and custom domain
 - [ ] 10-02: Final cross-browser and device testing, launch verification
 
 ## Progress
@@ -164,4 +164,4 @@ Plans:
 | 7. Training Videos          | 2/2            | Complete    | 2026-02-05   |
 | 8. Animations & Polish      | 2/2            | Complete    | 2026-02-05   |
 | 9. SEO & Performance        | 2/2            | Complete    | 2026-02-05   |
-| 10. Deployment & Testing    | 0/2            | Not started | -            |
+| 10. Deployment & Testing    | 1/2            | In progress | -            |
