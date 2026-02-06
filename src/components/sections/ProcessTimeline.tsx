@@ -54,7 +54,7 @@ export default function ProcessTimeline() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <Heading as="h2" size="3xl" className="mb-4">
+          <Heading as="h2" size="xl" className="mb-4">
             Our Proven Process
           </Heading>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">

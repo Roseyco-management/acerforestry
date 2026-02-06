@@ -26,12 +26,12 @@ export default function ContactCTA() {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
         >
-          <Heading as="h2" size="3xl" className="mb-4 text-white">
+          <Heading as="h2" size="xl" className="mb-4 text-white">
             Ready to Establish Your Forest?
           </Heading>
           <p className="text-lg text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
             Get in touch with Dillan or Rob to discuss your woodland
-            establishment needs. With 26 years of combined experience, we're
+            establishment needs. With 26 years of combined experience, we&apos;re
             ready to help your forest thrive.
           </p>
 

@@ -63,7 +63,7 @@ export default function Hero({
           >
             <Heading
               as="h1"
-              size="4xl"
+              size="xl"
               className="mb-6 text-white drop-shadow-lg"
             >
               {title}
