@@ -12,6 +12,44 @@ export const metadata: Metadata = {
 export default function SubcontractorsPage() {
   return (
     <>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'Work With Us - Acer Forestry',
+            description:
+              'Quality tree planting opportunities in Scottish forestry. Weekly pay, well-organized sites, competitive rates.',
+            url: 'https://acerforestry.co.uk/subcontractors',
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://acerforestry.co.uk',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Work With Us',
+                item: 'https://acerforestry.co.uk/subcontractors',
+              },
+            ],
+          }),
+        }}
+      />
+
       <Hero
         title="Work With Us"
         subtitle="Quality tree planting opportunities in Scottish forestry. We're looking for skilled, reliable subcontractors who take pride in their work. Join a team that values professionalism, pays weekly, and creates the conditions for productive work."

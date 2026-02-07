@@ -1,4 +1,25 @@
+# Acer Forestry - Robots.txt
+# Allow all search engines to crawl the site
+
 User-agent: *
 Allow: /
 
-Sitemap: https://acerforestry.co.uk/sitemap.xml
+# Block private/admin paths
+Disallow: /api/
+Disallow: /_next/static/
+
+# Sitemap location (update to custom domain when configured)
+Sitemap: https://acerforestry.vercel.app/sitemap.xml
+
+# Allow AI crawlers for better visibility in AI search
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /

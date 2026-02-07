@@ -12,6 +12,44 @@ export const metadata: Metadata = {
 export default function ForestManagersPage() {
   return (
     <>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'For Forest Managers - Acer Forestry',
+            description:
+              'Professional woodland establishment contractor in Scotland. HSE compliant, high survival rates, 26 years experience.',
+            url: 'https://acerforestry.co.uk/forest-managers',
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://acerforestry.co.uk',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'For Forest Managers',
+                item: 'https://acerforestry.co.uk/forest-managers',
+              },
+            ],
+          }),
+        }}
+      />
+
       <Hero
         title="For Forest Managers"
         subtitle="Professional woodland establishment backed by 26 years combined experience, stringent HSE compliance, and ethical standards aligned with the Institute of Chartered Foresters. Your projects deserve the credible, professional choice."

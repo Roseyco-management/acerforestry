@@ -14,6 +14,21 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'Acer Forestry - Woodland Establishment Specialists',
+            description:
+              'Professional tree planting and forestry contractors in Scotland. 26 years experience serving Highlands, Perthshire, and Morayshire. HSE compliant woodland establishment with high survival rates.',
+            url: 'https://acerforestry.co.uk',
+          }),
+        }}
+      />
+
       <Hero
         title="Professional Woodland Establishment for the Scottish Highlands"
         subtitle="Expert tree planting, ground preparation, and forest maintenance. HSE-compliant forestry services with exceptional survival rates backed by 26 years of combined experience."

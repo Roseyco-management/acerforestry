@@ -11,6 +11,44 @@ export const metadata: Metadata = {
 export default function Services() {
   return (
     <>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'Our Services - Acer Forestry',
+            description:
+              'Professional forestry services in Scotland: tree planting, manual ground preparation, fertilising, herbicide/pesticide application, tree removal, invasive species control, and forest maintenance.',
+            url: 'https://acerforestry.co.uk/services',
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://acerforestry.co.uk',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Our Services',
+                item: 'https://acerforestry.co.uk/services',
+              },
+            ],
+          }),
+        }}
+      />
+
       <Hero
         title="Our Services"
         subtitle="26 years combined experience delivering professional woodland establishment and maintenance services across the Highlands, Perthshire, and Morayshire. From initial planting to long-term forest health, we provide comprehensive forestry solutions."

@@ -121,16 +121,17 @@ export default function RootLayout({
           />
         </noscript>
 
-        {/* JSON-LD Structured Data */}
+        {/* JSON-LD Structured Data - Organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'LocalBusiness',
+              '@type': ['Organization', 'LocalBusiness'],
               name: 'Acer Forestry Ltd',
+              legalName: 'Acer Forestry Ltd',
               description:
-                'Professional woodland establishment and forestry services',
+                'Professional woodland establishment and forestry services with 26 years combined experience. HSE compliant tree planting, ground preparation, and forest maintenance across the Scottish Highlands.',
               url: 'https://acerforestry.co.uk',
               telephone: '+44-7756-513670',
               email: 'dillan.hill@acerforestry.co.uk',
@@ -139,14 +140,45 @@ export default function RootLayout({
                 addressCountry: 'GB',
                 addressRegion: 'Scotland',
               },
-              areaServed: ['Highlands', 'Perthshire', 'Morayshire'],
+              geo: {
+                '@type': 'GeoCoordinates',
+                latitude: 57.4,
+                longitude: -4.4,
+              },
+              areaServed: [
+                {
+                  '@type': 'Place',
+                  name: 'Scottish Highlands',
+                },
+                {
+                  '@type': 'Place',
+                  name: 'Perthshire',
+                },
+                {
+                  '@type': 'Place',
+                  name: 'Morayshire',
+                },
+              ],
               serviceType: [
                 'Woodland Establishment',
                 'Tree Planting',
                 'Ground Preparation',
                 'Fertilising',
+                'Herbicide and Pesticide Application',
+                'Tree Removal',
+                'Invasive Species Control',
                 'Forest Maintenance',
               ],
+              slogan: 'Professional Woodland Establishment for the Scottish Highlands',
+              knowsAbout: [
+                'Silviculture',
+                'Tree Planting',
+                'Woodland Management',
+                'Forest Establishment',
+                'Ground Preparation',
+                'HSE Compliance',
+              ],
+              award: 'Institute of Chartered Foresters Ethics Alignment',
             }),
           }}
         />

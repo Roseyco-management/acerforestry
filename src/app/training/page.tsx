@@ -11,6 +11,44 @@ export const metadata: Metadata = {
 export default function Training() {
   return (
     <>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'Training Videos - Acer Forestry',
+            description:
+              'Educational forestry training videos demonstrating professional tree planting techniques, ground preparation methods, and safety protocols.',
+            url: 'https://acerforestry.co.uk/training',
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://acerforestry.co.uk',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Training Videos',
+                item: 'https://acerforestry.co.uk/training',
+              },
+            ],
+          }),
+        }}
+      />
+
       <Hero
         title="Training Videos"
         subtitle="Demonstrating professional forestry techniques and safety practices developed over 26 years of Scottish woodland work. These videos showcase our commitment to quality and expertise in tree planting, ground preparation, and forest establishment."
