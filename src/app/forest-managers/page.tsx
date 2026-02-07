@@ -19,41 +19,105 @@ export default function ForestManagersPage() {
         ctaHref="tel:07756513670"
       />
 
-      <ValueProp
-        title="HSE Compliance"
-        description="We prioritize safety as a non-negotiable aspect of our operations. Stringent HSE measures are consistently observed to guarantee the well-being of our team members and all involved stakeholders. All sites are managed with a safety-first approach aligned with industry standards."
-        className="bg-light"
-      />
+      {/* Key Trust Signals */}
+      <section className="py-20 md:py-32 bg-slate-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-forest-600 text-center mb-16">
+            Why Forest Managers Choose Acer Forestry
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* HSE Compliance */}
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-forest-md transition-shadow border-l-4 border-accent-400">
+              <div className="text-4xl mb-4">✓</div>
+              <h3 className="text-xl font-bold text-forest-600 mb-3">
+                HSE Compliance
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                Stringent health, safety, and environmental measures on every
+                project. Safety-first approach aligned with industry standards.
+              </p>
+            </div>
 
-      <ValueProp
-        title="High Tree Survival Rates"
-        description="High tree survival rates from proper planting technique and 5-year protection protocols. Every tree planted with silvicultural precision to ensure establishment success and long-term forest health."
-        className="bg-white"
-      />
+            {/* High Survival Rates */}
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-forest-md transition-shadow border-l-4 border-accent-400">
+              <div className="text-4xl mb-4">📈</div>
+              <h3 className="text-xl font-bold text-forest-600 mb-3">
+                High Tree Survival Rates
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                Proper planting technique and 5-year protection protocols.
+                Silvicultural precision for long-term forest health.
+              </p>
+            </div>
 
-      <ValueProp
-        title="Silvicultural Expertise"
-        description="26 years combined forestry experience with deep understanding of tree species selection, site conditions, and Scottish woodland establishment. We understand the science behind successful forests."
-        className="bg-light"
-      />
+            {/* Expertise */}
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-forest-md transition-shadow border-l-4 border-accent-400">
+              <div className="text-4xl mb-4">🎓</div>
+              <h3 className="text-xl font-bold text-forest-600 mb-3">
+                Silvicultural Expertise
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                26 years combined experience. Deep understanding of species
+                selection, site conditions, and Scottish woodland establishment.
+              </p>
+            </div>
 
-      <ValueProp
-        title="Communication & Flexibility"
-        description="Regular updates throughout project lifecycle. Flexible approach adapting to site conditions and project changes. Responsive communication when you need it - phone or email, we're accessible."
-        className="bg-white"
-      />
+            {/* Communication */}
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-forest-md transition-shadow border-l-4 border-accent-400">
+              <div className="text-4xl mb-4">💬</div>
+              <h3 className="text-xl font-bold text-forest-600 mb-3">
+                Communication & Flexibility
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                Regular updates throughout project lifecycle. Flexible approach
+                adapting to site conditions. Responsive when you need us.
+              </p>
+            </div>
 
-      <ValueProp
-        title="Transparent Invoicing"
-        description="Straightforward invoices matching agreed terms. No surprises, no hidden costs. Clear documentation of work completed with honest, fair pricing."
-        className="bg-light"
-      />
+            {/* Transparent Invoicing */}
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-forest-md transition-shadow border-l-4 border-accent-400">
+              <div className="text-4xl mb-4">📋</div>
+              <h3 className="text-xl font-bold text-forest-600 mb-3">
+                Transparent Invoicing
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                Straightforward invoices matching agreed terms. No surprises, no
+                hidden costs. Clear documentation and honest pricing.
+              </p>
+            </div>
 
-      <ValueProp
-        title="ICF Ethical Standards"
-        description="Committed to ICF ethical standards in all forestry operations. Professional, ethical approach to woodland establishment that respects environmental stewardship and sustainable forestry practices."
-        className="bg-white"
-      />
+            {/* ICF Standards */}
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-forest-md transition-shadow border-l-4 border-accent-400">
+              <div className="text-4xl mb-4">🏆</div>
+              <h3 className="text-xl font-bold text-forest-600 mb-3">
+                ICF Ethical Standards
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                Professional, ethical approach to woodland establishment.
+                Environmental stewardship and sustainable forestry practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Placeholder - Ready for content */}
+      <section className="py-20 md:py-32 bg-gradient-forest text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12">
+            What Forest Managers Say
+          </h2>
+          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20">
+            <p className="text-lg italic mb-4">
+              &quot;Testimonials coming soon from satisfied Forest Managers
+              across the Highlands, Perthshire, and Morayshire.&quot;
+            </p>
+            <p className="text-sm text-white/70">
+              We&apos;re gathering client testimonials to showcase here
+            </p>
+          </div>
+        </div>
+      </section>
 
       <ContactCTA />
     </>
