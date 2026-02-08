@@ -2,11 +2,34 @@
 
 ## Overview
 
-Build a professional marketing website for Acer Forestry Ltd that converts three distinct audiences: Forest Managers seeking contractors, potential clients exploring services, and subcontractors looking for opportunities. The journey starts with modern technical foundation (Next.js + TypeScript), establishes professional branding aligned with Scottish forestry values, builds three targeted conversion funnels, integrates educational content, adds polished animations, optimizes for SEO and rural connectivity, and deploys to production.
+Build a professional marketing website for Acer Forestry Ltd that converts three distinct audiences: Forest Managers seeking contractors, potential clients exploring services, and subcontractors looking for opportunities.
 
 ## Domain Expertise
 
 None
+
+## Milestones
+
+- ✅ **v1.0 MVP** — Phases 1-10 (shipped 2026-02-08) — [Archive](milestones/v1.0-ROADMAP.md)
+
+## Completed Milestones
+
+### ✅ v1.0 MVP (Phases 1-10) — SHIPPED 2026-02-08
+
+Professional marketing website with three targeted conversion funnels (Forest Managers, Services, Subcontractors), modern technical foundation (Next.js 15 + TypeScript + Tailwind), professional Scottish forestry branding, polished animations, comprehensive SEO, and production deployment on Vercel.
+
+**Stats:** 10 phases, 22 plans, 3,331 lines of code, 3-day development cycle
+
+**Production URL:** https://acerforestry.vercel.app
+
+**Full details:** [milestones/v1.0-ROADMAP.md](milestones/v1.0-ROADMAP.md)
+
+---
+
+## Phase Archive (v1.0)
+
+<details>
+<summary>View completed phases from v1.0 MVP</summary>
 
 ## Phases
 
@@ -154,15 +177,17 @@ Plans:
 
 ## Progress
 
-| Phase                       | Plans Complete | Status      | Completed    |
-| --------------------------- | -------------- | ----------- | ------------ |
-| 1. Foundation & Setup       | 2/2            | Complete    | 2026-02-05   |
-| 2. Design System            | 3/3            | Complete    | 2026-02-05   |
-| 3. Core Layout & Navigation | 2/2            | Complete    | 2026-02-05   |
-| 4. Forest Manager Funnel    | 2/3            | In progress | -            |
-| 5. Services Deep Dive       | 2/2            | Complete    | 2026-02-05   |
-| 6. Subcontractor Funnel     | 2/2            | Complete    | 2026-02-05   |
-| 7. Training Videos          | 2/2            | Complete    | 2026-02-05   |
-| 8. Animations & Polish      | 2/2            | Complete    | 2026-02-05   |
-| 9. SEO & Performance        | 2/2            | Complete    | 2026-02-05   |
-| 10. Deployment & Testing    | 2/2            | Complete    | 2026-02-08   |
+| Phase                       | Milestone | Plans Complete | Status   | Completed  |
+| --------------------------- | --------- | -------------- | -------- | ---------- |
+| 1. Foundation & Setup       | v1.0      | 2/2            | Complete | 2026-02-05 |
+| 2. Design System            | v1.0      | 3/3            | Complete | 2026-02-05 |
+| 3. Core Layout & Navigation | v1.0      | 2/2            | Complete | 2026-02-05 |
+| 4. Forest Manager Funnel    | v1.0      | 2/2            | Complete | 2026-02-05 |
+| 5. Services Deep Dive       | v1.0      | 2/2            | Complete | 2026-02-05 |
+| 6. Subcontractor Funnel     | v1.0      | 2/2            | Complete | 2026-02-05 |
+| 7. Training Videos          | v1.0      | 2/2            | Complete | 2026-02-05 |
+| 8. Animations & Polish      | v1.0      | 2/2            | Complete | 2026-02-05 |
+| 9. SEO & Performance        | v1.0      | 3/3            | Complete | 2026-02-05 |
+| 10. Deployment & Testing    | v1.0      | 2/2            | Complete | 2026-02-08 |
+
+</details>

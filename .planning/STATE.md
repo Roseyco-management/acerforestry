@@ -2,20 +2,20 @@
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-02-05)
+See: .planning/PROJECT.md (updated 2026-02-08)
 
 **Core value:** Convert warm leads across all three audiences - Forest Managers into clients, service browsers into inquiries, and quality tree planters into subcontractors - while establishing Acer Forestry as the credible, professional, ethical choice in the Scottish forestry ecosystem.
 
-**Current focus:** Phase 4 — Forest Manager Funnel
+**Current focus:** Content enhancement and monitoring (post-v1.0 soft launch)
 
 ## Current Position
 
-Phase: 10 of 10 (Deployment & Testing)
-Plan: 2 of 2 in current phase
-Status: Phase complete
-Last activity: 2026-02-08 — Completed 10-02-PLAN.md
+Phase: All 10 phases complete (v1.0 MVP shipped)
+Plan: N/A - Milestone complete
+Status: Soft launch — monitoring and content enhancement
+Last activity: 2026-02-08 — v1.0 milestone complete
 
-Progress: ████████████████████ 100%
+Progress: ████████████████████ 100% (v1.0 MVP)
 
 ## Performance Metrics
 
@@ -47,10 +47,18 @@ Progress: ████████████████████ 100%
 
 ## Accumulated Context
 
+### Milestone Summary
+
+**v1.0 MVP shipped 2026-02-08:**
+- Production URL: https://acerforestry.vercel.app
+- 10 phases, 22 plans, 3,331 lines of code
+- 3-day development cycle
+- See: .planning/MILESTONES.md for full details
+
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
+All v1.0 decisions archived in PROJECT.md Key Decisions table.
+Recent milestone decisions:
 
 | Phase | Decision | Rationale |
 |-------|----------|-----------|
@@ -119,15 +127,18 @@ Recent decisions affecting current work:
 
 ### Deferred Issues
 
-None yet.
+- Custom domain setup (acerforestry.co.uk) - deferred to manual configuration
+- High-quality service photos - to be captured on job sites
+- Actual training video content - to be recorded/sourced
+- Client testimonials - to be collected from satisfied Forest Managers
 
 ### Blockers/Concerns
 
-None yet.
+None - v1.0 complete and functional.
 
 ## Session Continuity
 
-Last session: 2026-02-08T22:00:33Z
-Stopped at: Completed 10-02-PLAN.md — Final Testing & Launch Verification
+Last session: 2026-02-08
+Stopped at: v1.0 MVP milestone complete
 Resume file: None
-Milestone status: Complete - All 10 phases finished, website launched
+Milestone status: v1.0 shipped — Ready for content enhancement or next milestone planning

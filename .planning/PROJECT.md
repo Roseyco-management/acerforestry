@@ -12,20 +12,24 @@ Convert warm leads across all three audiences - Forest Managers into clients, se
 
 ### Validated
 
-(None yet — ship to validate)
+- ✓ **Forest Manager Funnel Page** — v1.0 (HSE compliance, tree survival rates, silvicultural expertise, communication, invoicing, ICF ethics messaging implemented)
+- ✓ **Services Deep Dive Page** — v1.0 (All 7 services showcased with photo placeholders ready for future enhancement)
+- ✓ **Subcontractor Funnel Page** — v1.0 (Weekly pay, organized sites, competitive rates, accommodation, application process)
+- ✓ **Training Videos Page** — v1.0 (Educational content section with placeholder infrastructure for future video embedding)
+- ✓ **Responsive Design** — v1.0 (Mobile-first approach tested across devices, field-optimized for forest managers)
+- ✓ **Professional Branding** — v1.0 (Dark green #1B4332 AF monogram, cohesive color palette, Inter typography system)
+- ✓ **Smooth Animations** — v1.0 (Framer Motion entrance and scroll animations with professional subtlety)
+- ✓ **Fast Loading** — v1.0 (Optimized for rural Scotland connections, Core Web Vitals targets achieved)
+- ✓ **SEO Optimization** — v1.0 (Complete metadata, LocalBusiness structured data, OpenGraph, keyword optimization)
+- ✓ **Contact Integration** — v1.0 (Phone/email CTAs throughout, tel: and mailto: links functional)
 
 ### Active
 
-- [ ] **Forest Manager Funnel Page** - Primary client conversion page addressing HSE compliance, tree survival rates, silvicultural expertise, communication, transparent invoicing, and ICF ethical standards. Prominent contact information for warm leads.
-- [ ] **Services Deep Dive Page** - Detailed showcase of all services (tree planting, manual ground preparation, fertilising, herbicide/pesticide application, tree removal, invasive species control, forest maintenance) with capability to add high-quality photos later.
-- [ ] **Subcontractor Funnel Page** - Recruitment page highlighting well-organized sites, weekly payment schedule, competitive rates, caravan accommodation options, good ground conditions, and application process.
-- [ ] **Training Videos Page** - Educational content section from existing site, demonstrating expertise and methods to clients and subcontractors.
-- [ ] **Responsive Design** - Mobile-first approach ensuring perfect functionality on all devices, especially mobile phones used by forest managers in the field.
-- [ ] **Professional Branding** - Refined logo (darker green AF monogram with leaf), cohesive color palette (natural greens, professional neutrals), and typography that blends professionalism with natural warmth.
-- [ ] **Smooth Animations** - Framer Motion integration for polished, professional animations and smooth scroll effects that enhance credibility without distracting.
-- [ ] **Fast Loading** - Optimized performance for rural Scotland's slower internet connections.
-- [ ] **SEO Optimization** - Proper meta tags, semantic HTML, and structure for discoverability by Forest Managers searching for woodland establishment contractors.
-- [ ] **Contact Integration** - Easy access to phone (07756513670) and email (dillan.hill@acerforestry.co.uk) throughout the site.
+- [ ] **Custom Domain Setup** - Configure acerforestry.co.uk DNS with Vercel for branded production URL
+- [ ] **Client Testimonials** - Collect and integrate testimonials from satisfied Forest Managers
+- [ ] **High-Quality Service Photos** - Capture and add professional photos of tree planting, ground prep, and other services
+- [ ] **Training Video Content** - Record or source actual training videos to replace placeholder cards
+- [ ] **Public Launch Strategy** - Plan timing and channels for public announcement after content enhancements
 
 ### Out of Scope
 
@@ -36,6 +40,22 @@ Convert warm leads across all three audiences - Forest Managers into clients, se
 - **Multi-language support** - English only for Scottish market.
 
 ## Context
+
+### Current State
+
+**Shipped v1.0 MVP on 2026-02-08:**
+- 3,331 lines of TypeScript/TSX/CSS
+- Tech stack: Next.js 15, React 19, Tailwind CSS, Framer Motion
+- Deployed to Vercel: https://acerforestry.vercel.app
+- Soft launch strategy: Live but not actively promoted
+- Analytics: GA4, Microsoft Clarity, Meta Pixel integrated
+- 3-day development cycle (Feb 5-8, 2026)
+
+**Current Status:**
+- All 10 phases complete
+- Website fully functional and tested
+- Ready for content enhancements and custom domain setup
+- Monitoring performance during soft launch period
 
 ### Business Background
 
@@ -78,12 +98,12 @@ Forest Managers work for large estates and coordinate multiple specialist contra
 4. Caravan accommodation if needed
 5. Good ground conditions
 
-### Current Website
+### Previous Website
 
-- Built on Wix platform
+- Was built on Wix platform (archived to `old-site-backup/`)
 - Content scraped and available in `/content.txt`
-- Basic structure but lacks modern polish and targeted messaging
-- Training videos page exists and should be retained
+- Basic structure but lacked modern polish and targeted messaging
+- Training videos page concept retained in new site
 
 ### Visual Assets
 
@@ -102,15 +122,16 @@ Forest Managers work for large estates and coordinate multiple specialist contra
 
 ## Key Decisions
 
-| Decision                               | Rationale                                                                                              | Outcome   |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------ | --------- |
-| Next.js over plain React               | SEO critical for discoverability, Vercel deployment simplicity, excellent Framer Motion support        | — Pending |
-| Three-funnel architecture              | Distinct audiences need tailored messaging (Forest Managers ≠ Subcontractors ≠ Service browsers)       | — Pending |
-| Design blending professional + natural | Must convey credibility (HSE compliance, ICF ethics) while reflecting connection to Scottish landscape | — Pending |
-| Include training videos in v1          | Demonstrates expertise and methods, valuable for both client confidence and subcontractor recruitment  | — Pending |
-| No reviews/testimonials initially      | Not currently available, but design allows future addition when obtained                               | — Pending |
-| Darker green logo refinement           | Better connection to forestry/nature theme, more professional than current bright green                | — Pending |
+| Decision                               | Rationale                                                                                              | Outcome |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------ | ------- |
+| Next.js over plain React               | SEO critical for discoverability, Vercel deployment simplicity, excellent Framer Motion support        | ✓ Good  |
+| Three-funnel architecture              | Distinct audiences need tailored messaging (Forest Managers ≠ Subcontractors ≠ Service browsers)       | ✓ Good  |
+| Design blending professional + natural | Must convey credibility (HSE compliance, ICF ethics) while reflecting connection to Scottish landscape | ✓ Good  |
+| Include training videos in v1          | Demonstrates expertise and methods, valuable for both client confidence and subcontractor recruitment  | ✓ Good  |
+| No reviews/testimonials initially      | Not currently available, but design allows future addition when obtained                               | ✓ Good  |
+| Darker green logo refinement           | Better connection to forestry/nature theme, more professional than bright green (#1B4332 selected)     | ✓ Good  |
+| Soft launch strategy                   | Allows monitoring, content enhancement, and custom domain setup without pressure                       | ✓ Good  |
 
 ---
 
-_Last updated: February 5, 2026 after project initialization_
+_Last updated: February 8, 2026 after v1.0 milestone_
