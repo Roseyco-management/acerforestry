@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import Hero from '@/components/sections/Hero'
 import ContactCTA from '@/components/sections/ContactCTA'
 
@@ -50,8 +51,9 @@ export default function Training() {
       />
 
       <Hero
-        title="Training Videos"
-        subtitle="Demonstrating professional forestry techniques and safety practices developed over 26 years of Scottish woodland work. These videos showcase our commitment to quality and expertise in tree planting, ground preparation, and forest establishment."
+        title="Professional Forestry Training and Techniques"
+        highlightedWord="Professional Forestry Training"
+        subtitle="Showcasing expert methods and safety practices from 26 years of Scottish woodland experience"
         ctaText="Call 07756 513 670"
         ctaHref="tel:07756513670"
       />
@@ -66,19 +68,19 @@ export default function Training() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Tree Planting Techniques */}
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-forest-md transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-forest-600 to-forest-700 rounded-lg mb-4 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div className="text-5xl mb-2">▶️</div>
-                  <p className="text-sm">Tree Planting Video</p>
-                  <p className="text-xs text-white/70 mt-1">
-                    Coming Soon
-                  </p>
-                </div>
+              <div className="aspect-video bg-gradient-to-br from-forest-600 to-forest-700 rounded-lg mb-4 relative overflow-hidden">
+                <Image
+                  src="/images/Acer4.jpg"
+                  alt="Professional tree planting team at work"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <h3 className="text-xl font-bold text-forest-600 mb-2">
                 Tree Planting Techniques
               </h3>
-              <p className="text-slate-600">
+              <p className="text-slate-900">
                 Proper planting methods for maximum survival rates. Spacing,
                 depth, and soil contact demonstrated.
               </p>
@@ -86,19 +88,19 @@ export default function Training() {
 
             {/* Ground Preparation */}
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-forest-md transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-forest-600 to-forest-700 rounded-lg mb-4 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div className="text-5xl mb-2">▶️</div>
-                  <p className="text-sm">Ground Prep Video</p>
-                  <p className="text-xs text-white/70 mt-1">
-                    Coming Soon
-                  </p>
-                </div>
+              <div className="aspect-video bg-gradient-to-br from-forest-600 to-forest-700 rounded-lg mb-4 relative overflow-hidden">
+                <Image
+                  src="/images/Acer5.jpg"
+                  alt="Site ground preparation for planting"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <h3 className="text-xl font-bold text-forest-600 mb-2">
                 Ground Preparation
               </h3>
-              <p className="text-slate-600">
+              <p className="text-slate-900">
                 Site conditioning methods including mounding, scarification, and
                 turf removal for optimal tree establishment.
               </p>
@@ -106,19 +108,19 @@ export default function Training() {
 
             {/* Safety Protocols */}
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-forest-md transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-forest-600 to-forest-700 rounded-lg mb-4 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div className="text-5xl mb-2">▶️</div>
-                  <p className="text-sm">Safety Video</p>
-                  <p className="text-xs text-white/70 mt-1">
-                    Coming Soon
-                  </p>
-                </div>
+              <div className="aspect-video bg-gradient-to-br from-forest-600 to-forest-700 rounded-lg mb-4 relative overflow-hidden">
+                <Image
+                  src="/images/AcerQuadBike.jpg"
+                  alt="Forestry quad bike for safe site access"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <h3 className="text-xl font-bold text-forest-600 mb-2">
                 Safety Protocols
               </h3>
-              <p className="text-slate-600">
+              <p className="text-slate-900">
                 HSE-compliant safety practices and procedures for forestry work.
                 Equipment usage and hazard awareness.
               </p>
@@ -126,19 +128,19 @@ export default function Training() {
 
             {/* Quality Standards */}
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-forest-md transition-shadow">
-              <div className="aspect-video bg-gradient-to-br from-forest-600 to-forest-700 rounded-lg mb-4 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <div className="text-5xl mb-2">▶️</div>
-                  <p className="text-sm">Quality Standards Video</p>
-                  <p className="text-xs text-white/70 mt-1">
-                    Coming Soon
-                  </p>
-                </div>
+              <div className="aspect-video bg-gradient-to-br from-forest-600 to-forest-700 rounded-lg mb-4 relative overflow-hidden">
+                <Image
+                  src="/images/Acer12.jpg"
+                  alt="Saplings with protective guards demonstrating quality care"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <h3 className="text-xl font-bold text-forest-600 mb-2">
                 Quality Standards
               </h3>
-              <p className="text-slate-600">
+              <p className="text-slate-900">
                 Silvicultural precision and quality control measures ensuring
                 exceptional tree survival and forest health.
               </p>
@@ -147,7 +149,7 @@ export default function Training() {
 
           {/* Note about videos */}
           <div className="mt-12 text-center">
-            <p className="text-slate-600 italic">
+            <p className="text-slate-900 italic">
               Training videos are being prepared. Once available, they will be
               embedded here with detailed demonstrations of our professional
               forestry techniques.

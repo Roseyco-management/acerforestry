@@ -1,7 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
 import Container from '@/components/ui/Container'
 import Button from '@/components/ui/Button'
@@ -17,6 +19,8 @@ export interface HeaderProps {
  */
 export default function Header({ className }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const router = useRouter()
+  const lastClickTime = useRef<number>(0)
 
   const navLinks = [
     { href: '/', label: 'Home' },
@@ -34,15 +38,45 @@ export default function Header({ className }: HeaderProps) {
     setMobileMenuOpen(false)
   }
 
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault()
+
+    const now = Date.now()
+    const timeSinceLastClick = now - lastClickTime.current
+
+    if (timeSinceLastClick < 300) {
+      // Double-click detected - go to admin
+      router.push('/admin/login')
+    } else {
+      // Single click - go to home (after delay to check for double-click)
+      setTimeout(() => {
+        const timeSinceClick = Date.now() - lastClickTime.current
+        if (timeSinceClick >= 300) {
+          router.push('/')
+        }
+      }, 310)
+    }
+
+    lastClickTime.current = now
+  }
+
   return (
     <header className={cn('bg-offwhite border-b border-primary/10', className)}>
       <Container>
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-primary">
-              Acer Forestry
-            </span>
+          <Link href="/" className="flex items-center" onClick={handleLogoClick}>
+            <Image
+              src="/images/AF Logo.png"
+              alt="Acer Forestry"
+              width={180}
+              height={60}
+              className="h-12 w-auto"
+              style={{
+                filter: 'drop-shadow(0 0 1px rgba(0, 0, 0, 0.3))',
+              }}
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

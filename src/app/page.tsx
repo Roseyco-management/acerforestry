@@ -3,6 +3,8 @@ import Hero from '@/components/sections/Hero'
 import TrustBadges from '@/components/sections/TrustBadges'
 import ValueProp from '@/components/sections/ValueProp'
 import ProcessTimeline from '@/components/sections/ProcessTimeline'
+import TeamSection from '@/components/sections/TeamSection'
+import ProjectGallery from '@/components/sections/ProjectGallery'
 import ContactCTA from '@/components/sections/ContactCTA'
 
 export const metadata: Metadata = {
@@ -31,7 +33,8 @@ export default function Home() {
 
       <Hero
         title="Professional Woodland Establishment for the Scottish Highlands"
-        subtitle="Expert tree planting, ground preparation, and forest maintenance. HSE-compliant forestry services with exceptional survival rates backed by 26 years of combined experience."
+        highlightedWord="Professional Woodland Establishment"
+        subtitle="Expert tree planting, ground preparation, and forest maintenance with exceptional survival rates"
         ctaText="Call 07756 513 670"
         ctaHref="tel:07756513670"
       />
@@ -40,46 +43,46 @@ export default function Home() {
 
       <section className="py-20 md:py-32 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-forest-600 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-6">
             Proper Planting, Exceptional Results
           </h2>
-          <p className="text-lg text-slate-600 leading-relaxed mb-8">
+          <p className="text-lg text-slate-900 leading-relaxed mb-8">
             Every tree is planted with silvicultural precision. Our
             comprehensive 5-year protection protocols ensure exceptional
             establishment success and long-term forest vitality.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mt-12">
             <div className="p-6 bg-slate-50 rounded-lg border-l-4 border-accent-400">
-              <h3 className="font-bold text-forest-600 mb-2">
+              <h3 className="font-bold text-charcoal mb-2">
                 ✓ Site Analysis & Species Selection
               </h3>
-              <p className="text-slate-600">
+              <p className="text-slate-900">
                 Comprehensive assessment and optimal species selection for your
                 site conditions
               </p>
             </div>
             <div className="p-6 bg-slate-50 rounded-lg border-l-4 border-accent-400">
-              <h3 className="font-bold text-forest-600 mb-2">
+              <h3 className="font-bold text-charcoal mb-2">
                 ✓ Professional Planting Techniques
               </h3>
-              <p className="text-slate-600">
+              <p className="text-slate-900">
                 Expert ground preparation and planting for maximum survival
                 rates
               </p>
             </div>
             <div className="p-6 bg-slate-50 rounded-lg border-l-4 border-accent-400">
-              <h3 className="font-bold text-forest-600 mb-2">
+              <h3 className="font-bold text-charcoal mb-2">
                 ✓ 5-Year Protection Protocols
               </h3>
-              <p className="text-slate-600">
+              <p className="text-slate-900">
                 Comprehensive protection, weed control, and maintenance programs
               </p>
             </div>
             <div className="p-6 bg-slate-50 rounded-lg border-l-4 border-accent-400">
-              <h3 className="font-bold text-forest-600 mb-2">
+              <h3 className="font-bold text-charcoal mb-2">
                 ✓ Regular Monitoring & Reporting
               </h3>
-              <p className="text-slate-600">
+              <p className="text-slate-900">
                 Ongoing monitoring and transparent reporting on forest progress
               </p>
             </div>
@@ -89,7 +92,7 @@ export default function Home() {
 
       <section className="py-20 md:py-32 bg-gradient-forest text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
             Full-Service Woodland Establishment
           </h2>
           <p className="text-lg text-white/90 leading-relaxed mb-12">
@@ -100,14 +103,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             <div>
               <div className="text-4xl mb-4">🔍</div>
-              <h3 className="font-bold text-xl mb-2">Planning & Assessment</h3>
+              <h3 className="font-bold text-xl mb-2 text-white">Planning & Assessment</h3>
               <p className="text-white/80">
                 Site analysis, species selection, and forestry planning
               </p>
             </div>
             <div>
               <div className="text-4xl mb-4">🌱</div>
-              <h3 className="font-bold text-xl mb-2">
+              <h3 className="font-bold text-xl mb-2 text-white">
                 Planting & Establishment
               </h3>
               <p className="text-white/80">
@@ -116,7 +119,7 @@ export default function Home() {
             </div>
             <div>
               <div className="text-4xl mb-4">🛡️</div>
-              <h3 className="font-bold text-xl mb-2">
+              <h3 className="font-bold text-xl mb-2 text-white">
                 Protection & Maintenance
               </h3>
               <p className="text-white/80">
@@ -133,7 +136,22 @@ export default function Home() {
         className="bg-slate-50"
       />
 
+      <TeamSection />
+
       <ProcessTimeline />
+
+      <ProjectGallery
+        images={[
+          { src: '/images/Acer1.jpg', alt: 'Tree planting project in Highland estate' },
+          { src: '/images/Acer5.jpg', alt: 'Ground preparation for woodland creation' },
+          { src: '/images/AcerQuadBike.jpg', alt: 'Forestry quad bike on site' },
+          { src: '/images/Acer12.jpg', alt: 'Newly planted saplings with protection' },
+          { src: '/images/AcerDeer.jpg', alt: 'Deer fencing installation' },
+          { src: '/images/Acer18.jpg', alt: 'Large scale planting operation' },
+          { src: '/images/AcerLorry.jpg', alt: 'Equipment transport for forestry work' },
+          { src: '/images/Acer25.jpg', alt: 'Established woodland project' },
+        ]}
+      />
 
       <ContactCTA />
     </>

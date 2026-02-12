@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Hero from '@/components/sections/Hero'
 import ValueProp from '@/components/sections/ValueProp'
+import ProjectGallery from '@/components/sections/ProjectGallery'
 import ContactCTA from '@/components/sections/ContactCTA'
 
 export const metadata: Metadata = {
@@ -51,8 +52,9 @@ export default function SubcontractorsPage() {
       />
 
       <Hero
-        title="Work With Us"
-        subtitle="Quality tree planting opportunities in Scottish forestry. We're looking for skilled, reliable subcontractors who take pride in their work. Join a team that values professionalism, pays weekly, and creates the conditions for productive work."
+        title="Quality Tree Planting Opportunities in Scottish Forestry"
+        highlightedWord="Quality Tree Planting Opportunities"
+        subtitle="Join a professional team that pays weekly, values skilled work, and creates excellent site conditions"
         ctaText="Call About Opportunities"
         ctaHref="tel:07756513670"
       />
@@ -71,7 +73,7 @@ export default function SubcontractorsPage() {
               <h3 className="text-xl font-bold text-forest-600 mb-3">
                 Well-Organized Work Sites
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-slate-900 leading-relaxed">
                 Sites planned and coordinated for efficient workflow. Clear
                 communication on expectations, proper site preparation, and
                 organized logistics. We value your time and create conditions
@@ -85,7 +87,7 @@ export default function SubcontractorsPage() {
               <h3 className="text-xl font-bold text-forest-600 mb-3">
                 Weekly Payment
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-slate-900 leading-relaxed">
                 Paid weekly, not monthly. We understand the importance of
                 regular cash flow for self-employed professionals.
                 Straightforward payment schedule you can rely on.
@@ -98,7 +100,7 @@ export default function SubcontractorsPage() {
               <h3 className="text-xl font-bold text-forest-600 mb-3">
                 Competitive Rates
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-slate-900 leading-relaxed">
                 Fair, competitive rates for quality tree planting work.
                 Transparent pricing structure discussed upfront. We value
                 skilled planters and compensate accordingly.
@@ -111,7 +113,7 @@ export default function SubcontractorsPage() {
               <h3 className="text-xl font-bold text-forest-600 mb-3">
                 Accommodation Available
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-slate-900 leading-relaxed">
                 Caravan accommodation available for those who need it. We
                 understand traveling for work requires proper accommodation
                 arrangements. Options discussed based on project location.
@@ -124,7 +126,7 @@ export default function SubcontractorsPage() {
               <h3 className="text-xl font-bold text-forest-600 mb-3">
                 Good Ground Conditions
               </h3>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-slate-900 leading-relaxed">
                 We select and prepare sites with care. Quality ground
                 preparation means better planting conditions and more productive
                 days. Silvicultural approach creates better working conditions
@@ -138,13 +140,13 @@ export default function SubcontractorsPage() {
       {/* What We Look For */}
       <section className="py-20 md:py-32 bg-gradient-forest text-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
             What We&apos;re Looking For
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-              <h3 className="font-bold text-xl mb-3">✓ Experience</h3>
+              <h3 className="font-bold text-xl mb-3 text-white">✓ Experience</h3>
               <p className="text-white/90">
                 Skilled tree planters who understand proper planting technique
                 and take pride in quality work.
@@ -152,7 +154,7 @@ export default function SubcontractorsPage() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-              <h3 className="font-bold text-xl mb-3">✓ Reliability</h3>
+              <h3 className="font-bold text-xl mb-3 text-white">✓ Reliability</h3>
               <p className="text-white/90">
                 Dependable professionals who show up on time and complete work
                 to agreed standards.
@@ -160,7 +162,7 @@ export default function SubcontractorsPage() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-              <h3 className="font-bold text-xl mb-3">✓ Professionalism</h3>
+              <h3 className="font-bold text-xl mb-3 text-white">✓ Professionalism</h3>
               <p className="text-white/90">
                 Team players who communicate well and represent Acer Forestry
                 professionally on site.
@@ -168,7 +170,7 @@ export default function SubcontractorsPage() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-              <h3 className="font-bold text-xl mb-3">✓ Quality Focus</h3>
+              <h3 className="font-bold text-xl mb-3 text-white">✓ Quality Focus</h3>
               <p className="text-white/90">
                 Commitment to high tree survival rates through proper planting
                 technique and attention to detail.
@@ -177,6 +179,23 @@ export default function SubcontractorsPage() {
           </div>
         </div>
       </section>
+
+      {/* Work Environment Gallery */}
+      <ProjectGallery
+        images={[
+          { src: '/images/Acer4.jpg', alt: 'Professional planting team at work' },
+          { src: '/images/Acer18.jpg', alt: 'Large scale planting operation' },
+          { src: '/images/Acer5.jpg', alt: 'Well-prepared site conditions' },
+          { src: '/images/AcerQuadBike.jpg', alt: 'Modern forestry equipment' },
+          { src: '/images/Acer12.jpg', alt: 'Quality planting with protection' },
+          { src: '/images/AcerLorry.jpg', alt: 'Professional logistics and transport' },
+          { src: '/images/Acer25.jpg', alt: 'Results - established woodland' },
+          { src: '/images/AcerDeer.jpg', alt: 'Deer fencing work' },
+        ]}
+        title="See the Work Environment"
+        subtitle="Quality sites, professional organization, and the results that follow"
+        className="bg-white"
+      />
 
       <ContactCTA />
     </>
