@@ -26,6 +26,9 @@ import ClientDistributionChart from '@/components/admin/charts/ClientDistributio
 import ActivityFeed from '@/components/admin/ActivityFeed'
 import ProjectTimeline from '@/components/admin/ProjectTimeline'
 
+// Force dynamic rendering (uses cookies for Supabase auth)
+export const dynamic = 'force-dynamic'
+
 export default async function AdminDashboard() {
   // Fetch all data in parallel with error handling
   let projectStats, clientStats, revenueStats, contactStats, revenueByMonth, clientDistribution, recentActivity, activeProjects
