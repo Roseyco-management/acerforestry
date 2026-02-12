@@ -16,10 +16,10 @@ export default function ServicesGrid() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0, ease: "easeOut" }}
         >
-          <Card>
+          <Card variant="elevated">
             {/* TODO: Replace with <Image src="/photos/tree-planting.jpg" alt="Professional tree planting in Scottish Highlands" width={800} height={450} />
                  Use OptimizedImage component from @/components/ui/Image for automatic optimization */}
-            <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
+            <div className="aspect-video bg-gradient-to-br from-neutral-100 to-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
               Photo coming soon
             </div>
             <Heading as="h2" size="lg" className="mb-4">
@@ -37,10 +37,10 @@ export default function ServicesGrid() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
         >
-          <Card>
+          <Card variant="elevated">
             {/* TODO: Replace with <Image src="/photos/ground-preparation.jpg" alt="Manual ground preparation for tree planting" width={800} height={450} />
                  Use OptimizedImage component from @/components/ui/Image for automatic optimization */}
-            <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
+            <div className="aspect-video bg-gradient-to-br from-neutral-100 to-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
               Photo coming soon
             </div>
             <Heading as="h2" size="lg" className="mb-4">
@@ -58,10 +58,10 @@ export default function ServicesGrid() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         >
-          <Card>
+          <Card variant="elevated">
             {/* TODO: Replace with <Image src="/photos/fertilising.jpg" alt="Targeted fertilising for young forest growth" width={800} height={450} />
                  Use OptimizedImage component from @/components/ui/Image for automatic optimization */}
-            <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
+            <div className="aspect-video bg-gradient-to-br from-neutral-100 to-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
               Photo coming soon
             </div>
             <Heading as="h2" size="lg" className="mb-4">
@@ -79,10 +79,10 @@ export default function ServicesGrid() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
         >
-          <Card>
+          <Card variant="elevated">
             {/* TODO: Replace with <Image src="/photos/herbicide-application.jpg" alt="Professional herbicide application with HSE compliance" width={800} height={450} />
                  Use OptimizedImage component from @/components/ui/Image for automatic optimization */}
-            <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
+            <div className="aspect-video bg-gradient-to-br from-neutral-100 to-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
               Photo coming soon
             </div>
             <Heading as="h2" size="lg" className="mb-4">
@@ -103,7 +103,7 @@ export default function ServicesGrid() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0, ease: "easeOut" }}
         >
-          <Card>
+          <Card variant="gradient">
             {/* TODO: Replace with <Image src="/photos/tree-removal.jpg" alt="Safe professional tree removal service" width={800} height={450} />
                  Use OptimizedImage component from @/components/ui/Image for automatic optimization */}
             <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
@@ -124,7 +124,7 @@ export default function ServicesGrid() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
         >
-          <Card>
+          <Card variant="gradient">
             {/* TODO: Replace with <Image src="/photos/invasive-species-control.jpg" alt="Invasive species control for woodland establishment" width={800} height={450} />
                  Use OptimizedImage component from @/components/ui/Image for automatic optimization */}
             <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">
@@ -145,7 +145,7 @@ export default function ServicesGrid() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
         >
-          <Card>
+          <Card variant="gradient">
             {/* TODO: Replace with <Image src="/photos/forest-maintenance.jpg" alt="Comprehensive forest maintenance services" width={800} height={450} />
                  Use OptimizedImage component from @/components/ui/Image for automatic optimization */}
             <div className="aspect-video bg-neutral-200 rounded mb-4 flex items-center justify-center text-neutral-400 text-sm">

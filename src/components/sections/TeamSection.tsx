@@ -15,9 +15,9 @@ export default function TeamSection() {
       image: '/images/Rob, Director at AcerForestry.jpg',
     },
     {
-      name: 'Dillon',
+      name: 'Dillan',
       role: 'Director',
-      image: '/images/Dillon, Director at AcerForestry.jpg',
+      image: '/images/Dillan, Director at AcerForestry.jpg',
     },
   ]
 

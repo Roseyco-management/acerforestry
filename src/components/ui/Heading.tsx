@@ -18,13 +18,13 @@ export default function Heading({
   className,
   children,
 }: HeadingProps) {
-  const baseStyles = 'font-bold text-charcoal leading-tight'
+  const baseStyles = 'font-bold leading-tight tracking-[-0.01em]'
 
   const sizeStyles = {
-    xl: 'text-3xl md:text-5xl',
-    lg: 'text-2xl md:text-4xl',
-    md: 'text-xl md:text-3xl',
-    sm: 'text-lg md:text-2xl',
+    xl: 'text-4xl md:text-5xl',
+    lg: 'text-3xl md:text-4xl',
+    md: 'text-2xl md:text-3xl',
+    sm: 'text-xl md:text-2xl',
   }
 
   return (

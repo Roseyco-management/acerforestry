@@ -11,6 +11,12 @@ const config: Config = {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+        // Core Brand Colors
+        primary: '#1B4332',
+        secondary: '#2D6A4F',
+        charcoal: '#2B2D42',
+        darkgray: '#8D99AE',
+        offwhite: '#FEFEFE',
         // Premium Acer Forestry Brand Colors
         forest: {
           50: '#F0F7F4',

@@ -59,7 +59,7 @@ export default function TermsOfService() {
             Terms of Service
           </Heading>
 
-          <p className="text-slate-600 mb-8">
+          <p className="text-slate-900 mb-8">
             <strong>Last updated:</strong> February 2026
           </p>
 

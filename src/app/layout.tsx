@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
-import MainLayout from '@/components/layout/MainLayout'
+import ConditionalLayout from '@/components/layout/ConditionalLayout'
 import { WebVitals } from './web-vitals'
 
 const inter = Inter({
@@ -69,7 +69,7 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body>
         <WebVitals />
-        <MainLayout>{children}</MainLayout>
+        <ConditionalLayout>{children}</ConditionalLayout>
 
         {/* Google Analytics 4 */}
         <Script

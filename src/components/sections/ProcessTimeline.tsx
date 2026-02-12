@@ -57,7 +57,7 @@ export default function ProcessTimeline() {
           <Heading as="h2" size="xl" className="mb-4">
             Our Proven Process
           </Heading>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg text-slate-900 max-w-2xl mx-auto">
             From initial planning to thriving forest—a systematic approach to
             woodland success
           </p>
@@ -84,7 +84,7 @@ export default function ProcessTimeline() {
                 <h3 className="text-lg font-bold text-forest-600 mb-3">
                   {step.title}
                 </h3>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-slate-900 leading-relaxed">
                   {step.description}
                 </p>
               </div>

@@ -71,7 +71,7 @@ export default function TrustBadges() {
               <h3 className="text-lg font-bold text-forest-600 mb-2">
                 {badge.title}
               </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-900 text-sm leading-relaxed">
                 {badge.description}
               </p>
             </motion.div>

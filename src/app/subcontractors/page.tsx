@@ -69,7 +69,11 @@ export default function SubcontractorsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Well-Organized Sites */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-forest-md transition-shadow border-l-4 border-accent-400">
-              <div className="text-4xl mb-4">📋</div>
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              </div>
               <h3 className="text-xl font-bold text-forest-600 mb-3">
                 Well-Organized Work Sites
               </h3>
@@ -83,7 +87,11 @@ export default function SubcontractorsPage() {
 
             {/* Weekly Payment */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-forest-md transition-shadow border-l-4 border-accent-400">
-              <div className="text-4xl mb-4">💰</div>
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
               <h3 className="text-xl font-bold text-forest-600 mb-3">
                 Weekly Payment
               </h3>
@@ -96,7 +104,11 @@ export default function SubcontractorsPage() {
 
             {/* Competitive Rates */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-forest-md transition-shadow border-l-4 border-accent-400">
-              <div className="text-4xl mb-4">📈</div>
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
               <h3 className="text-xl font-bold text-forest-600 mb-3">
                 Competitive Rates
               </h3>
@@ -109,7 +121,11 @@ export default function SubcontractorsPage() {
 
             {/* Accommodation */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-forest-md transition-shadow border-l-4 border-accent-400">
-              <div className="text-4xl mb-4">🏠</div>
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </div>
               <h3 className="text-xl font-bold text-forest-600 mb-3">
                 Accommodation Available
               </h3>
@@ -122,7 +138,11 @@ export default function SubcontractorsPage() {
 
             {/* Good Ground Conditions */}
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-forest-md transition-shadow border-l-4 border-accent-400 md:col-span-2">
-              <div className="text-4xl mb-4">🌱</div>
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+              </div>
               <h3 className="text-xl font-bold text-forest-600 mb-3">
                 Good Ground Conditions
               </h3>
@@ -146,7 +166,10 @@ export default function SubcontractorsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-              <h3 className="font-bold text-xl mb-3 text-white">✓ Experience</h3>
+              <h3 className="font-bold text-xl mb-3 text-white">
+                <svg className="w-6 h-6 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg> Experience</h3>
               <p className="text-white/90">
                 Skilled tree planters who understand proper planting technique
                 and take pride in quality work.
@@ -154,7 +177,10 @@ export default function SubcontractorsPage() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-              <h3 className="font-bold text-xl mb-3 text-white">✓ Reliability</h3>
+              <h3 className="font-bold text-xl mb-3 text-white">
+                <svg className="w-6 h-6 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg> Reliability</h3>
               <p className="text-white/90">
                 Dependable professionals who show up on time and complete work
                 to agreed standards.
@@ -162,7 +188,10 @@ export default function SubcontractorsPage() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-              <h3 className="font-bold text-xl mb-3 text-white">✓ Professionalism</h3>
+              <h3 className="font-bold text-xl mb-3 text-white">
+                <svg className="w-6 h-6 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg> Professionalism</h3>
               <p className="text-white/90">
                 Team players who communicate well and represent Acer Forestry
                 professionally on site.
@@ -170,7 +199,10 @@ export default function SubcontractorsPage() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
-              <h3 className="font-bold text-xl mb-3 text-white">✓ Quality Focus</h3>
+              <h3 className="font-bold text-xl mb-3 text-white">
+                <svg className="w-6 h-6 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg> Quality Focus</h3>
               <p className="text-white/90">
                 Commitment to high tree survival rates through proper planting
                 technique and attention to detail.

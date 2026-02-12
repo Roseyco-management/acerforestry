@@ -54,7 +54,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mt-12">
             <div className="p-6 bg-slate-50 rounded-lg border-l-4 border-accent-400">
               <h3 className="font-bold text-charcoal mb-2">
-                ✓ Site Analysis & Species Selection
+                
+                <svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg> Site Analysis & Species Selection
               </h3>
               <p className="text-slate-900">
                 Comprehensive assessment and optimal species selection for your
@@ -63,7 +66,10 @@ export default function Home() {
             </div>
             <div className="p-6 bg-slate-50 rounded-lg border-l-4 border-accent-400">
               <h3 className="font-bold text-charcoal mb-2">
-                ✓ Professional Planting Techniques
+                
+                <svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg> Professional Planting Techniques
               </h3>
               <p className="text-slate-900">
                 Expert ground preparation and planting for maximum survival
@@ -72,7 +78,10 @@ export default function Home() {
             </div>
             <div className="p-6 bg-slate-50 rounded-lg border-l-4 border-accent-400">
               <h3 className="font-bold text-charcoal mb-2">
-                ✓ 5-Year Protection Protocols
+                
+                <svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg> 5-Year Protection Protocols
               </h3>
               <p className="text-slate-900">
                 Comprehensive protection, weed control, and maintenance programs
@@ -80,7 +89,10 @@ export default function Home() {
             </div>
             <div className="p-6 bg-slate-50 rounded-lg border-l-4 border-accent-400">
               <h3 className="font-bold text-charcoal mb-2">
-                ✓ Regular Monitoring & Reporting
+                
+                <svg className="w-5 h-5 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg> Regular Monitoring & Reporting
               </h3>
               <p className="text-slate-900">
                 Ongoing monitoring and transparent reporting on forest progress
@@ -109,7 +121,11 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <div className="text-4xl mb-4">🌱</div>
+              <div className="mb-4">
+                <svg className="w-10 h-10 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+              </div>
               <h3 className="font-bold text-xl mb-2 text-white">
                 Planting & Establishment
               </h3>

@@ -25,7 +25,7 @@ export default function Footer({ className }: FooterProps) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             {/* Company Info */}
             <div>
-              <h3 className="text-xl font-bold mb-4">Acer Forestry Ltd</h3>
+              <h3 className="text-xl font-bold mb-4 text-offwhite">Acer Forestry Ltd</h3>
               <p className="text-offwhite/90 mb-2">Company No. SC670730</p>
               <p className="text-offwhite/90 mb-2">
                 Rob and Dillan - 26 years combined experience
@@ -38,7 +38,7 @@ export default function Footer({ className }: FooterProps) {
 
             {/* Contact Details */}
             <div>
-              <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+              <h3 className="text-xl font-bold mb-4 text-offwhite">Contact Us</h3>
               <div className="space-y-2">
                 <p>
                   <a
@@ -61,7 +61,7 @@ export default function Footer({ className }: FooterProps) {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+              <h3 className="text-xl font-bold mb-4 text-offwhite">Quick Links</h3>
               <nav className="space-y-2">
                 {navLinks.map((link) => (
                   <Link
