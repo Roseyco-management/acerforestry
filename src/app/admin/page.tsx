@@ -30,41 +30,15 @@ import ProjectTimeline from '@/components/admin/ProjectTimeline'
 export const dynamic = 'force-dynamic'
 
 export default async function AdminDashboard() {
-  // Fetch all data in parallel with error handling
-  let projectStats, clientStats, revenueStats, contactStats, revenueByMonth, clientDistribution, recentActivity, activeProjects
-
-  try {
-    [
-      projectStats,
-      clientStats,
-      revenueStats,
-      contactStats,
-      revenueByMonth,
-      clientDistribution,
-      recentActivity,
-      activeProjects,
-    ] = await Promise.all([
-      getProjectStats(),
-      getClientStats(),
-      getRevenueStats(),
-      getContactStats(),
-      getRevenueByMonth(),
-      getClientDistribution(),
-      getRecentActivity(10),
-      getActiveProjectsTimeline(),
-    ])
-  } catch (error) {
-    console.error('Dashboard data fetch error:', error)
-    return (
-      <div className="space-y-6">
-        <div className="bg-red-50 border border-red-200 rounded-lg p-6">
-          <h2 className="text-xl font-bold text-red-900 mb-2">Error Loading Dashboard</h2>
-          <p className="text-red-700">{error instanceof Error ? error.message : 'Unknown error'}</p>
-          <pre className="mt-4 text-xs text-red-600 overflow-auto">{error instanceof Error ? error.stack : ''}</pre>
-        </div>
+  // Temporarily simplified to test auth
+  return (
+    <div className="space-y-6">
+      <div className="bg-green-50 border border-green-200 rounded-lg p-6">
+        <h2 className="text-2xl font-bold text-green-900 mb-2">✅ Admin Dashboard Loaded!</h2>
+        <p className="text-green-700">Authentication is working. Dashboard will be fully restored once we confirm this works.</p>
       </div>
-    )
-  }
+    </div>
+  )
 
   return (
     <div className="space-y-6">
