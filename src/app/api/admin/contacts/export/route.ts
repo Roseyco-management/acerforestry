@@ -1,5 +1,5 @@
 /**
- * Admin Contact Submissions Export API
+ * Contact Submissions Export API
  *
  * GET /api/admin/contacts/export - Export submissions to CSV
  */
@@ -9,7 +9,7 @@ import { getUserProfile } from '@/lib/supabase/server'
 import { NextResponse } from 'next/server'
 
 /**
- * GET - Export contact submissions to CSV
+ * GET - Export contact submissions as CSV
  * Query params:
  * - status: filter by status (optional)
  */
@@ -34,7 +34,7 @@ export async function GET(request: Request) {
       .select('*')
       .order('created_at', { ascending: false })
 
-    // Apply status filter if provided
+    // Apply status filter
     if (status && status !== 'all') {
       query = query.eq('status', status)
     }
@@ -49,56 +49,49 @@ export async function GET(request: Request) {
       )
     }
 
-    if (!data || data.length === 0) {
-      return NextResponse.json(
-        { error: 'No data to export' },
-        { status: 404 }
-      )
-    }
-
-    // Create CSV content
+    // Convert to CSV
     const headers = [
       'ID',
       'Name',
       'Email',
       'Phone',
       'Company',
-      'Message',
+      'Location',
       'Service Interest',
       'Woodland Area (ha)',
-      'Location',
+      'Message',
       'Status',
-      'Assigned To',
       'Notes',
+      'Assigned To',
       'Follow Up Date',
       'Source',
       'Created At',
       'Updated At',
     ]
 
-    const csvRows = [headers.join(',')]
-
-    data.forEach((submission) => {
-      const row = [
-        submission.id,
-        `"${(submission.name || '').replace(/"/g, '""')}"`,
-        submission.email || '',
-        submission.phone || '',
-        `"${(submission.company_name || '').replace(/"/g, '""')}"`,
-        `"${(submission.message || '').replace(/"/g, '""')}"`,
-        `"${(submission.service_interest || '').replace(/"/g, '""')}"`,
-        submission.woodland_area || '',
-        `"${(submission.location || '').replace(/"/g, '""')}"`,
-        submission.status,
-        submission.assigned_to || '',
-        `"${(submission.notes || '').replace(/"/g, '""')}"`,
-        submission.follow_up_date || '',
-        submission.source,
-        submission.created_at,
-        submission.updated_at,
-      ]
-      csvRows.push(row.join(','))
-    })
+    const csvRows = [
+      headers.join(','),
+      ...data.map((submission) =>
+        [
+          submission.id,
+          escapeCsvValue(submission.name),
+          escapeCsvValue(submission.email),
+          escapeCsvValue(submission.phone || ''),
+          escapeCsvValue(submission.company_name || ''),
+          escapeCsvValue(submission.location || ''),
+          escapeCsvValue(submission.service_interest || ''),
+          submission.woodland_area || '',
+          escapeCsvValue(submission.message),
+          submission.status,
+          escapeCsvValue(submission.notes || ''),
+          submission.assigned_to || '',
+          submission.follow_up_date || '',
+          submission.source || '',
+          new Date(submission.created_at).toISOString(),
+          new Date(submission.updated_at).toISOString(),
+        ].join(',')
+      ),
+    ]
 
     const csv = csvRows.join('\n')
 
@@ -113,8 +106,7 @@ export async function GET(request: Request) {
     })
 
     // Return CSV file
-    return new NextResponse(csv, {
-      status: 200,
+    return new Response(csv, {
       headers: {
         'Content-Type': 'text/csv',
         'Content-Disposition': `attachment; filename="contact-submissions-${new Date().toISOString().split('T')[0]}.csv"`,
@@ -127,4 +119,19 @@ export async function GET(request: Request) {
       { status: 500 }
     )
   }
+}
+
+/**
+ * Helper function to escape CSV values
+ */
+function escapeCsvValue(value: string): string {
+  if (!value) return ''
+
+  // If the value contains comma, quote, or newline, wrap it in quotes
+  if (value.includes(',') || value.includes('"') || value.includes('\n')) {
+    // Escape quotes by doubling them
+    return `"${value.replace(/"/g, '""')}"`
+  }
+
+  return value
 }

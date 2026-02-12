@@ -28,6 +28,7 @@ export default function Header({ className }: HeaderProps) {
     { href: '/services', label: 'Services' },
     { href: '/subcontractors', label: 'Subcontractors' },
     { href: '/training', label: 'Training' },
+    { href: '/contact', label: 'Contact' },
   ]
 
   const toggleMobileMenu = () => {
