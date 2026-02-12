@@ -34,9 +34,9 @@ export function createMiddlewareClient(request: NextRequest) {
 
   // Validate environment variables
   if (!supabaseUrl || !supabaseAnonKey) {
-    throw new Error(
-      'Missing Supabase environment variables. Please check your .env.local file.'
-    )
+    // Return a null client if Supabase is not configured
+    // This allows the site to work without Supabase (admin disabled)
+    return { supabase: null, response }
   }
 
   // Create the Supabase client for middleware
@@ -79,6 +79,17 @@ export function createMiddlewareClient(request: NextRequest) {
  */
 export async function getMiddlewareSession(request: NextRequest) {
   const { supabase, response } = createMiddlewareClient(request)
+
+  // If Supabase is not configured, return no session
+  if (!supabase) {
+    return {
+      session: null,
+      user: null,
+      error: null,
+      response,
+      supabase: null,
+    }
+  }
 
   // Get the current session
   const {
