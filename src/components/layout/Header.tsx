@@ -46,7 +46,7 @@ export default function Header({ className }: HeaderProps) {
     const timeSinceLastClick = now - lastClickTime.current
 
     if (timeSinceLastClick < 300) {
-      // Double-click detected - go to admin
+      // Double-click detected - go to admin login
       router.push('/admin/login')
     } else {
       // Single click - go to home (after delay to check for double-click)
