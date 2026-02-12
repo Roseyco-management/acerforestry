@@ -27,26 +27,41 @@ import ActivityFeed from '@/components/admin/ActivityFeed'
 import ProjectTimeline from '@/components/admin/ProjectTimeline'
 
 export default async function AdminDashboard() {
-  // Fetch all data in parallel
-  const [
-    projectStats,
-    clientStats,
-    revenueStats,
-    contactStats,
-    revenueByMonth,
-    clientDistribution,
-    recentActivity,
-    activeProjects,
-  ] = await Promise.all([
-    getProjectStats(),
-    getClientStats(),
-    getRevenueStats(),
-    getContactStats(),
-    getRevenueByMonth(),
-    getClientDistribution(),
-    getRecentActivity(10),
-    getActiveProjectsTimeline(),
-  ])
+  // Fetch all data in parallel with error handling
+  let projectStats, clientStats, revenueStats, contactStats, revenueByMonth, clientDistribution, recentActivity, activeProjects
+
+  try {
+    [
+      projectStats,
+      clientStats,
+      revenueStats,
+      contactStats,
+      revenueByMonth,
+      clientDistribution,
+      recentActivity,
+      activeProjects,
+    ] = await Promise.all([
+      getProjectStats(),
+      getClientStats(),
+      getRevenueStats(),
+      getContactStats(),
+      getRevenueByMonth(),
+      getClientDistribution(),
+      getRecentActivity(10),
+      getActiveProjectsTimeline(),
+    ])
+  } catch (error) {
+    console.error('Dashboard data fetch error:', error)
+    return (
+      <div className="space-y-6">
+        <div className="bg-red-50 border border-red-200 rounded-lg p-6">
+          <h2 className="text-xl font-bold text-red-900 mb-2">Error Loading Dashboard</h2>
+          <p className="text-red-700">{error instanceof Error ? error.message : 'Unknown error'}</p>
+          <pre className="mt-4 text-xs text-red-600 overflow-auto">{error instanceof Error ? error.stack : ''}</pre>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="space-y-6">
