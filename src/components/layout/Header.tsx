@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -14,21 +14,31 @@ export interface HeaderProps {
 }
 
 /**
- * Responsive header with desktop navigation and mobile menu
- * Includes brand logo, navigation links, and phone CTA
+ * Sticky header with desktop/mobile navigation, phone CTA, and scroll progress bar.
+ * Nav links jump to sections on the single-page layout.
+ * Double-clicking the logo navigates to the admin login.
  */
 export default function Header({ className }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [scrollProgress, setScrollProgress] = useState(0)
   const router = useRouter()
   const lastClickTime = useRef<number>(0)
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight
+      const progress = totalHeight > 0 ? (window.scrollY / totalHeight) * 100 : 0
+      setScrollProgress(progress)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/forest-managers', label: 'Forest Managers' },
-    { href: '/services', label: 'Services' },
-    { href: '/subcontractors', label: 'Subcontractors' },
-    { href: '/training', label: 'Training' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/#home', label: 'Home' },
+    { href: '/#why-forest-managers', label: 'Land Owner / Forest Manager' },
+    { href: '/#services', label: 'Services' },
+    { href: '/#contact', label: 'Contact' },
   ]
 
   const toggleMobileMenu = () => {
@@ -62,7 +72,7 @@ export default function Header({ className }: HeaderProps) {
   }
 
   return (
-    <header className={cn('bg-offwhite border-b border-primary/10', className)}>
+    <header className={cn('bg-offwhite border-b border-primary/10 sticky top-0 z-50', className)}>
       <Container>
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
@@ -100,7 +110,7 @@ export default function Header({ className }: HeaderProps) {
             <motion.div
               initial={{ opacity: 0, y: -5 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.5, ease: 'easeOut' }}
+              transition={{ duration: 0.4, delay: 0.4, ease: 'easeOut' }}
             >
               <Button variant="primary" size="md">
                 <a href="tel:07756513670" className="text-offwhite no-underline">
@@ -148,6 +158,14 @@ export default function Header({ className }: HeaderProps) {
           </nav>
         </div>
       </Container>
+
+      {/* Scroll progress bar */}
+      <div className="h-0.5 bg-primary/10">
+        <div
+          className="h-full bg-accent-400 transition-none"
+          style={{ width: `${scrollProgress}%` }}
+        />
+      </div>
     </header>
   )
 }

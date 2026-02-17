@@ -49,6 +49,10 @@
   --section-padding-y-lg: 8rem;     /* lg:py-32 */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--color-text-primary);
   background: var(--background);
