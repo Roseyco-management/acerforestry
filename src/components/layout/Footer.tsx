@@ -79,6 +79,7 @@ export default function Footer({ className }: FooterProps) {
           {/* Copyright */}
           <div className="mt-8 pt-8 border-t border-offwhite/20 text-center text-offwhite/80 text-sm">
             © 2026 Acer Forestry Ltd. All rights reserved.
+            <p className="text-xs text-offwhite/40 mt-2">Website by <a href="https://roseyco.com" target="_blank" rel="noopener noreferrer" className="hover:text-offwhite transition-colors">RoseyCo</a></p>
           </div>
         </div>
       </Container>
